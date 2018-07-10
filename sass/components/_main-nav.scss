@@ -1,3 +1,7 @@
+.c-main-nav__logo {
+    float: left;
+}
+
 .c-main-nav__menu-item {
     float: left;
 
@@ -24,6 +28,17 @@
     font-weight: 400;
 }
 
-@media screen and (min-width: 767px) {
+.l-main-nav {
+    padding-top: .25em;
+}
 
+.l-main-nav__menu-container {
+    float: right;
+}
+
+
+@include media-breakpoint-up(sm) {
+    .c-main-nav__menu-toggle {
+        display: none;
+    }
 }

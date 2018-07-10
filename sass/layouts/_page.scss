@@ -1,4 +1,22 @@
+body {
+    background-image: url('./img/mountain-bg-cropped-100.jpg');
+    background-position: top left 30%;
+    position: relative;
+    
+    &::after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(26, 26, 26, .20);
+        z-index: 1;
+    }
+}
+
 #page {
-    background-image: url('./img/mountain-bg.jpg');
     min-height: 100vh;
+    position: relative;
+    z-index: 2;
 }

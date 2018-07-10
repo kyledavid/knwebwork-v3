@@ -20,6 +20,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 ----------------------------------------------------------------
 # Libraries
 # Variables
+# Base
 # Layouts
 # Components
 # Objects
@@ -30,12 +31,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 @import "lib/normalize";
 @import "lib/bootstrap/bootstrap-grid";
+@import "lib/bootstrap/mixins/breakpoints";
+@import "lib/bootstrap/mixins/clearfix";
+@import "lib/bootstrap/utilities/clearfix";
 
 /*--------------------------------------------------------------
 # Variables
 --------------------------------------------------------------*/
 @import "variables/colors";
 @import "variables/typography";
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+@import "base/base";
 
 /*--------------------------------------------------------------
 # Layouts

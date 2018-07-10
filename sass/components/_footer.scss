@@ -1,0 +1,29 @@
+.l-site-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding-bottom: 28px;
+    
+    color: $color__off-white;
+    font-weight: 300;
+}
+
+.l-site-footer__site-info {
+    display: inline-block;
+
+    transform-origin: bottom left;
+    transform: rotate(270deg);
+}
+
+.l-site-footer__contact {
+    float: right;
+
+    font-size: $font-size__24;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}

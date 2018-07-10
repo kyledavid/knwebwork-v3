@@ -19,6 +19,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 ----------------------------------------------------------------
 # Libraries
 # Variables
+# Base
 # Layouts
 # Components
 # Objects
@@ -1441,19 +1442,69 @@ html {
   .align-self-xl-stretch {
     align-self: stretch !important; } }
 
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: ""; }
+
 /*--------------------------------------------------------------
 # Variables
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+body {
+  color: #222222; }
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+body {
+  background-image: url("./img/mountain-bg-cropped-100.jpg");
+  background-position: top left 30%;
+  position: relative; }
+  body::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(26, 26, 26, 0.2);
+    z-index: 1; }
+
 #page {
-  background-image: url("./img/mountain-bg.jpg");
-  min-height: 100vh; }
+  min-height: 100vh;
+  position: relative;
+  z-index: 2; }
 
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
+.l-site-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 28px;
+  color: #fff3e9;
+  font-weight: 300; }
+
+.l-site-footer__site-info {
+  display: inline-block;
+  transform-origin: bottom left;
+  transform: rotate(270deg); }
+
+.l-site-footer__contact {
+  float: right;
+  font-size: 1.5em; }
+  .l-site-footer__contact a {
+    color: inherit;
+    text-decoration: none; }
+
+.c-main-nav__logo {
+  float: left; }
+
 .c-main-nav__menu-item {
   float: left;
   margin-left: 4em;
@@ -1471,6 +1522,16 @@ html {
   color: #53eaf2;
   font-style: italic;
   font-weight: 400; }
+
+.l-main-nav {
+  padding-top: .25em; }
+
+.l-main-nav__menu-container {
+  float: right; }
+
+@media (min-width: 576px) {
+  .c-main-nav__menu-toggle {
+    display: none; } }
 
 /*--------------------------------------------------------------
 # Objects

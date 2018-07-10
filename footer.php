@@ -13,20 +13,13 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kn-webwork-3-0' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'kn-webwork-3-0' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'kn-webwork-3-0' ), 'kn-webwork-3-0', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
+	<footer id="colophon" class="c-site-footer l-site-footer container">
+		<div class="c-site-footer__site-info l-site-footer__site-info">
+			<span>&copy;copyright 2018 knwebwork</span>
 		</div><!-- .site-info -->
+		<div class="c-site-footer__contact l-site-footer__contact">
+			<a href="mailto:kyledavid022@gmail.com">contact</a>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
