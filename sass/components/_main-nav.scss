@@ -1,0 +1,29 @@
+.c-main-nav__menu-item {
+    float: left;
+
+    margin-left: 4em;
+
+    color: $color__off-white;
+    font-size: $font-size__24;
+    font-weight: 300;
+
+    list-style-type: none;
+
+    &:first-of-type {
+        margin-left: none;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.c-main-nav__menu-item--emphasis {
+    color: $color__emphasis;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 767px) {
+
+}
