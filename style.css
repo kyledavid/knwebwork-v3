@@ -1549,9 +1549,6 @@ body {
   font-style: italic;
   text-decoration: none;
   opacity: 0; }
-  .c-hero__cta:hover {
-    background-color: #A9FFF5;
-    color: #222222; }
 
 .l-hero {
   margin-top: 125px; }
@@ -1597,7 +1594,8 @@ body {
   font-weight: 400; }
   .c-main-nav__menu-item--emphasis a:hover {
     background-color: #A9FFF5;
-    color: #222222; }
+    color: #222222;
+    opacity: 1; }
 
 .l-main-nav {
   padding-top: 1em; }
@@ -1612,19 +1610,28 @@ body {
 /*--------------------------------------------------------------
 # Objects
 --------------------------------------------------------------*/
-a {
+a, .o-link {
   text-decoration: none; }
-  a:hover {
-    background-color: #fff3e9;
-    color: #222222; }
+  a:hover, .o-link:hover {
+    opacity: .8;
+    transition-duration: 400ms; }
+
+.o-link--emphasis {
+  color: #A9FFF5; }
+  .o-link--emphasis:hover {
+    background-color: #A9FFF5;
+    color: #222222;
+    opacity: 1; }
 
 .o-image-link:hover {
-  background-color: initial; }
+  background-color: initial;
+  opacity: 1; }
 
 .o-contact-link:hover {
   background-color: initial;
   color: #fff3e9;
   font-size: 1.2em;
+  opacity: 1;
   transition-duration: 800ms; }
 
 body {

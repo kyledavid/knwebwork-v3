@@ -20,7 +20,7 @@ get_header();
             <div class="c-hero l-hero">
                 <h2 class="c-hero__intro l-hero__intro col-sm-5 offset-sm-4">Las Vegas Grown</h2>
                 <h1 class="c-hero__title l-hero__title col-sm-5 offset-sm-4">FULL STACK <br/><span class="c-hero__subtitle l-hero__subtitle">APPS &amp; WEBSITES</span></h1>
-                <a class="c-hero__cta l-hero__cta offset-sm-8" href="<?php echo bloginfo('url'); ?>/work-with-us">hire us</a>
+                <a class="c-hero__cta l-hero__cta offset-sm-8 o-link--emphasis" href="<?php echo bloginfo('url'); ?>/work-with-us">hire us</a>
             </div>
         </main><!-- #main -->
     </div><!-- #primary -->

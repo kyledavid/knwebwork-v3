@@ -120,7 +120,7 @@ add_action( 'widgets_init', 'kn_webwork_3_0_widgets_init' );
  * Enqueue scripts and styles.
  */
 function kn_webwork_3_0_scripts() {
-	wp_enqueue_style( 'kn-webwork-3-0-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'kn-webwork-3-0-style', get_stylesheet_uri(), array(), filemtime( get_stylesheet_directory() . '/style.css' ) );
 
 	wp_enqueue_style( 'josefin-sans', 'https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,400i,600i');
 
