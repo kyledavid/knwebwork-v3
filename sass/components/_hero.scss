@@ -1,0 +1,28 @@
+.c-hero__intro {
+    font-size: 52px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.c-hero__title {
+    font-size: 82px;
+    font-style: italic;
+}
+
+.c-hero__subtitle {
+    display: block;
+
+    font-size: 52px;
+    font-style: normal;
+}
+
+.c-hero__cta {
+    color: $color__emphasis;
+    font-size: 38px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.l-hero {
+    margin-top: 180px;
+}

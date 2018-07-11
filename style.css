@@ -1447,6 +1447,16 @@ html {
   clear: both;
   content: ""; }
 
+.sl-justify {
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: justify;
+  text-align-last: justify; }
+  .sl-justify:after {
+    content: " ";
+    display: inline-block;
+    width: 100%; }
+
 /*--------------------------------------------------------------
 # Variables
 --------------------------------------------------------------*/
@@ -1454,7 +1464,7 @@ html {
 # Layouts
 --------------------------------------------------------------*/
 body {
-  color: #222222; }
+  color: #fff3e9; }
 
 /*--------------------------------------------------------------
 # Layouts
@@ -1470,7 +1480,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(26, 26, 26, 0.2);
+    background-color: rgba(26, 26, 26, 0.1);
     z-index: 1; }
 
 #page {
@@ -1501,6 +1511,29 @@ body {
   .l-site-footer__contact a {
     color: inherit;
     text-decoration: none; }
+
+.c-hero__intro {
+  font-size: 52px;
+  font-weight: 100;
+  text-align: center; }
+
+.c-hero__title {
+  font-size: 82px;
+  font-style: italic; }
+
+.c-hero__subtitle {
+  display: block;
+  font-size: 52px;
+  font-style: normal; }
+
+.c-hero__cta {
+  color: #53eaf2;
+  font-size: 38px;
+  font-style: italic;
+  text-decoration: none; }
+
+.l-hero {
+  margin-top: 180px; }
 
 .c-main-nav__logo {
   float: left; }

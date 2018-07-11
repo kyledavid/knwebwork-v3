@@ -27,7 +27,9 @@
 
 		<nav id="site-navigation" class="c-main-nav l-main-nav container clearfix">
 			<div class="c-main-nav__logo">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/knww-logo.png">
+				<a href="<?php echo bloginfo('url'); ?>">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/knww-logo.png">
+				</a>
 			</div>
 			<button class="c-main-nav__menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kn-webwork-3-0' ); ?></button>
 			<?php
