@@ -1,6 +1,6 @@
 body {
     background-image: url('./img/mountain-bg-cropped-100.jpg');
-    background-position: top left 30%;
+    background-position: top left 45%;
     position: relative;
     
     &::after {
@@ -16,7 +16,13 @@ body {
 }
 
 #page {
-    min-height: 100vh;
+    min-height: 768px;
     position: relative;
     z-index: 2;
+}
+
+@media screen and (max-height: 768px) {
+    #page {
+        min-height: 100vh;
+    }
 }

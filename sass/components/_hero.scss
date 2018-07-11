@@ -1,28 +1,52 @@
+.c-hero {
+
+}
+
 .c-hero__intro {
-    font-size: 52px;
+    font-size: 50px;
     font-weight: 100;
     text-align: center;
 }
 
 .c-hero__title {
-    font-size: 82px;
+    font-size: 72px;
     font-style: italic;
+    font-weight: 400;
 }
 
 .c-hero__subtitle {
     display: block;
 
-    font-size: 52px;
+    font-size: 48px;
     font-style: normal;
 }
 
 .c-hero__cta {
     color: $color__emphasis;
-    font-size: 38px;
+    font-size: 34px;
     font-style: italic;
     text-decoration: none;
 }
 
 .l-hero {
-    margin-top: 180px;
+    margin-top: 120px;
+}
+
+.l-hero__intro {
+    margin-bottom: 0;
+}
+
+.l-hero__title {
+    margin-top: 52px;
+}
+
+.l-hero__subtitle {
+    margin-top: 15px;
+}
+
+.l-hero__cta {
+    display: inline-block;
+
+    margin-top: 80px;
+    padding: 0;
 }
