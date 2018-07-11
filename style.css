@@ -1471,7 +1471,7 @@ body {
 --------------------------------------------------------------*/
 body {
   background-image: url("./img/mountain-bg-cropped-100.jpg");
-  background-position: top left 45%;
+  background-position: top left 46%;
   position: relative; }
   body::after {
     content: " ";
@@ -1506,6 +1506,8 @@ body {
 
 .l-site-footer__site-info {
   display: inline-block;
+  position: absolute;
+  bottom: 38px;
   transform-origin: bottom left;
   transform: rotate(270deg) translateY(40px); }
 
@@ -1517,34 +1519,48 @@ body {
     text-decoration: none; }
 
 .c-hero__intro {
+  position: relative;
+  right: 0;
   font-size: 50px;
   font-weight: 100;
-  text-align: center; }
+  text-align: center;
+  opacity: 0; }
 
 .c-hero__title {
+  position: relative;
+  right: 50px;
   font-size: 72px;
   font-style: italic;
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0; }
 
 .c-hero__subtitle {
+  position: relative;
+  left: 250px;
   display: block;
   font-size: 48px;
   font-style: normal; }
 
 .c-hero__cta {
-  color: #53eaf2;
+  position: relative;
+  right: 150px;
+  color: #A9FFF5;
   font-size: 34px;
   font-style: italic;
-  text-decoration: none; }
+  text-decoration: none;
+  opacity: 0; }
+  .c-hero__cta:hover {
+    background-color: #A9FFF5;
+    color: #222222; }
 
 .l-hero {
-  margin-top: 120px; }
+  margin-top: 125px; }
 
 .l-hero__intro {
   margin-bottom: 0; }
 
 .l-hero__title {
-  margin-top: 52px; }
+  margin-top: 42px; }
 
 .l-hero__subtitle {
   margin-top: 15px; }
@@ -1553,6 +1569,12 @@ body {
   display: inline-block;
   margin-top: 80px;
   padding: 0; }
+
+.c-main-nav__menu {
+  opacity: 0;
+  position: relative;
+  left: 100px;
+  transition-duration: 800ms; }
 
 .c-main-nav__logo {
   float: left; }
@@ -1567,16 +1589,18 @@ body {
   .c-main-nav__menu-item:first-of-type {
     margin-left: none; }
   .c-main-nav__menu-item a {
-    color: inherit;
-    text-decoration: none; }
+    color: inherit; }
 
 .c-main-nav__menu-item--emphasis {
-  color: #53eaf2;
+  color: #A9FFF5;
   font-style: italic;
   font-weight: 400; }
+  .c-main-nav__menu-item--emphasis a:hover {
+    background-color: #A9FFF5;
+    color: #222222; }
 
 .l-main-nav {
-  padding-top: .25em; }
+  padding-top: 1em; }
 
 .l-main-nav__menu-container {
   float: right; }
@@ -1588,5 +1612,20 @@ body {
 /*--------------------------------------------------------------
 # Objects
 --------------------------------------------------------------*/
+a {
+  text-decoration: none; }
+  a:hover {
+    background-color: #fff3e9;
+    color: #222222; }
+
+.o-image-link:hover {
+  background-color: initial; }
+
+.o-contact-link:hover {
+  background-color: initial;
+  color: #fff3e9;
+  font-size: 1.2em;
+  transition-duration: 800ms; }
+
 body {
   font-family: 'Josefin Sans', sans-serif; }

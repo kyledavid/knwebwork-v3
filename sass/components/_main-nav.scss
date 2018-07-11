@@ -1,3 +1,12 @@
+.c-main-nav__menu {
+    opacity: 0;
+
+    position: relative;
+    left: 100px;
+
+    transition-duration: 800ms;
+}
+
 .c-main-nav__logo {
     float: left;
 }
@@ -16,9 +25,9 @@
     &:first-of-type {
         margin-left: none;
     }
+
     a {
         color: inherit;
-        text-decoration: none;
     }
 }
 
@@ -26,10 +35,15 @@
     color: $color__emphasis;
     font-style: italic;
     font-weight: 400;
+
+    a:hover {
+        background-color: $color__emphasis;
+        color: $color__black;
+    }
 }
 
 .l-main-nav {
-    padding-top: .25em;
+    padding-top: 1em;
 }
 
 .l-main-nav__menu-container {

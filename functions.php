@@ -124,6 +124,8 @@ function kn_webwork_3_0_scripts() {
 
 	wp_enqueue_style( 'josefin-sans', 'https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,400i,600i');
 
+	wp_enqueue_script( 'front-page-scripts', get_template_directory_uri() . '/js/front-page.js', array('jquery'), null, true);
+
 	wp_enqueue_script( 'kn-webwork-3-0-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'kn-webwork-3-0-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

@@ -3,18 +3,31 @@
 }
 
 .c-hero__intro {
+    position: relative;
+    right: 0;
+
     font-size: 50px;
     font-weight: 100;
     text-align: center;
+
+    opacity: 0;
 }
 
 .c-hero__title {
+    position: relative;
+    right: 50px;
+
     font-size: 72px;
     font-style: italic;
     font-weight: 400;
+
+    opacity: 0;
 }
 
 .c-hero__subtitle {
+    position: relative;
+    left: 250px;
+
     display: block;
 
     font-size: 48px;
@@ -22,14 +35,24 @@
 }
 
 .c-hero__cta {
+    position: relative;
+    right: 150px;
+
     color: $color__emphasis;
     font-size: 34px;
     font-style: italic;
     text-decoration: none;
+
+    opacity: 0;
+
+    &:hover {
+        background-color: $color__emphasis;
+        color: $color__black;
+    }
 }
 
 .l-hero {
-    margin-top: 120px;
+    margin-top: 125px;
 }
 
 .l-hero__intro {
@@ -37,7 +60,7 @@
 }
 
 .l-hero__title {
-    margin-top: 52px;
+    margin-top: 42px;
 }
 
 .l-hero__subtitle {

@@ -27,7 +27,7 @@
 
 		<nav id="site-navigation" class="c-main-nav l-main-nav container clearfix">
 			<div class="c-main-nav__logo">
-				<a href="<?php echo bloginfo('url'); ?>">
+				<a href="<?php echo bloginfo('url'); ?>" class="o-image-link">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/knww-logo.png">
 				</a>
 			</div>
