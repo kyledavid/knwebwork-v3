@@ -1,3 +1,25 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
 }
+
+.o-page-header {
+    display: inline-block;
+
+    border-bottom: 1px solid $color__off-white;
+    padding-right: 10px;
+
+    font-size: 44px;
+    font-style: italic;
+    font-weight: 600;
+
+    text-transform: uppercase;
+}
+
+.l-page-header {
+    margin-top: 80px;
+
+    position: relative;
+    right: 50px;
+
+    opacity: 0;
+}

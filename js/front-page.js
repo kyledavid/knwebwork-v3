@@ -1,7 +1,3 @@
-// show hero section on delay
-// first intro, then headline, then cta
-// show nav on mousemove with small delay
-
 (function($){
     var showTitle = function() {
         $('.c-hero__title').css({right: 0, opacity: 1, transitionDuration: '1200ms', transitionProperty: 'right, opacity',})
@@ -21,6 +17,11 @@
         setTimeout(showIntro, 400)
         setTimeout(showTitle, 1600)
         setTimeout(showCTA, 2900)
+        $(document).click(function() {
+            showIntro()
+            showTitle()
+            showCTA()
+        })
         $(document).mousemove(function() {showNav()})
        
     })

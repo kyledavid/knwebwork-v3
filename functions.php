@@ -123,8 +123,13 @@ function kn_webwork_3_0_scripts() {
 	wp_enqueue_style( 'kn-webwork-3-0-style', get_stylesheet_uri(), array(), filemtime( get_stylesheet_directory() . '/style.css' ) );
 
 	wp_enqueue_style( 'josefin-sans', 'https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,400i,600i');
-
-	wp_enqueue_script( 'front-page-scripts', get_template_directory_uri() . '/js/front-page.js', array('jquery'), null, true);
+	if ( is_front_page() ) {
+		wp_enqueue_script( 'front-page-scripts', get_template_directory_uri() . '/js/front-page.js', array('jquery'), null, true);
+	}
+	
+	if ( is_page('work-with-us') ) {
+		wp_enqueue_script( 'wwu-scripts', get_template_directory_uri() . '/js/work-with-us.js', array('jquery'), null, true);
+	}
 
 	wp_enqueue_script( 'kn-webwork-3-0-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

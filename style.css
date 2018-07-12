@@ -1519,7 +1519,10 @@ body {
     text-decoration: none; }
 
 .l-work-form {
-  margin-top: 48px; }
+  margin-top: 48px;
+  position: relative;
+  right: 100px;
+  opacity: 0; }
 
 .c-work-form__field {
   background: none;
@@ -1697,3 +1700,18 @@ a, .o-link {
 
 body {
   font-family: 'Josefin Sans', sans-serif; }
+
+.o-page-header {
+  display: inline-block;
+  border-bottom: 1px solid #fff3e9;
+  padding-right: 10px;
+  font-size: 44px;
+  font-style: italic;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.l-page-header {
+  margin-top: 80px;
+  position: relative;
+  right: 50px;
+  opacity: 0; }
