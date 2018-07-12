@@ -42,6 +42,10 @@
 
         opacity: 1;
     }
+
+    a:hover {
+        transition-duration: 0ms;
+    }
 }
 
 .l-main-nav {
