@@ -1671,6 +1671,70 @@ body {
   .c-main-nav__menu-toggle {
     display: none; } }
 
+.l-projects {
+  display: flex;
+  flex-flow: row wrap; }
+  .l-projects::after {
+    content: " ";
+    flex: 1 0 34%;
+    margin-left: 2.5%; }
+
+.l-projects__project {
+  background-color: pink;
+  flex: 1 0 34%;
+  margin-left: 2.5%;
+  margin-top: 5%;
+  overflow: hidden;
+  position: relative; }
+  .l-projects__project:first-of-type, .l-projects__project:nth-of-type(2) {
+    margin-top: 0; }
+  .l-projects__project:nth-child(odd) {
+    margin-left: 0;
+    margin-right: 2.5%; }
+  .l-projects__project::before {
+    content: " ";
+    display: inline-block;
+    padding-top: 100%;
+    vertical-align: middle; }
+
+.l-projects__screenshot {
+  max-width: 100%;
+  position: absolute; }
+
+.l-projects__overlay {
+  background-color: pink;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 300ms;
+  overflow: hidden; }
+
+.c-projects__project:hover .l-projects__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.c-projects__tech-list {
+  list-style-type: none; }
+
+.c-projects__name {
+  background-color: #222222;
+  color: #fff3e9;
+  font-size: 36px;
+  font-weight: 300;
+  text-align: center; }
+
+.l-projects__name {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%); }
+
 /*--------------------------------------------------------------
 # Objects
 --------------------------------------------------------------*/

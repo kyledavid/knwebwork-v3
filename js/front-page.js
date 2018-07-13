@@ -17,6 +17,7 @@
         setTimeout(showIntro, 400)
         setTimeout(showTitle, 1600)
         setTimeout(showCTA, 2900)
+        setTimeout(showNav, 5000)
         $(document).click(function() {
             showIntro()
             showTitle()
