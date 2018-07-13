@@ -1679,8 +1679,10 @@ body {
     flex: 1 0 34%;
     margin-left: 2.5%; }
 
+.c-projects__project {
+  background-color: #fff3e9; }
+
 .l-projects__project {
-  background-color: pink;
   flex: 1 0 34%;
   margin-left: 2.5%;
   margin-top: 5%;
@@ -1699,41 +1701,62 @@ body {
 
 .l-projects__screenshot {
   max-width: 100%;
-  position: absolute; }
+  position: absolute;
+  z-index: 1; }
+
+.c-projects__overlay {
+  background-color: #fff3e9;
+  transition: 800ms; }
 
 .l-projects__overlay {
-  background-color: pink;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transition: 300ms;
-  overflow: hidden; }
-
-.c-projects__project:hover .l-projects__overlay {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0; }
+  right: 100%;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 4; }
+
+.c-projects__project:hover .l-projects__overlay {
+  right: 0; }
+
+.c-projects__project:hover .l-projects__name {
+  height: 0;
+  padding: 0; }
 
 .c-projects__tech-list {
+  color: #222222;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 50px;
   list-style-type: none; }
+
+.l-projects__tech-list {
+  margin: 25px;
+  padding: 0;
+  position: absolute;
+  bottom: 0; }
 
 .c-projects__name {
   background-color: #222222;
   color: #fff3e9;
   font-size: 36px;
   font-weight: 300;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: 300ms; }
 
 .l-projects__name {
+  margin: 0;
+  padding-top: .25em;
+  padding-bottom: .1em;
   position: absolute;
   top: 50%;
   left: 0;
   right: 0;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  z-index: 3; }
 
 /*--------------------------------------------------------------
 # Objects

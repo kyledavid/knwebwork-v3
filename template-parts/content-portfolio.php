@@ -23,6 +23,7 @@
             <div class="c-projects__project l-projects__project">
                 <img src="http://localhost/wp/KN-Webwork2/wp-content/uploads/2018/07/neal-hill-vegas-developer.jpg"
                     class="c-projects__screenshot l-projects__screenshot">
+                <h2 class="c-projects__name l-projects__name">Rock Genius</h2>
                 <div class="c-projects__overlay l-projects__overlay">
                     <ul class="c-projects__tech-list l-projects__tech-list">
                         <li>CSS></li>
