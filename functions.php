@@ -146,6 +146,11 @@ function kn_webwork_3_0_scripts() {
 add_action( 'wp_enqueue_scripts', 'kn_webwork_3_0_scripts' );
 
 /**
+  * Add post type for Portfolio Items
+  */
+require_once 'inc/cpt-project.php';
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
