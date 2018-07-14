@@ -1730,6 +1730,8 @@ body {
   font-weight: 300;
   line-height: 50px;
   list-style-type: none; }
+  .c-projects__tech-list li:first-of-type {
+    font-weight: 400; }
 
 .l-projects__tech-list {
   margin: 25px;
@@ -1761,9 +1763,9 @@ body {
 /*--------------------------------------------------------------
 # Objects
 --------------------------------------------------------------*/
-a, .o-link {
+.c-main-nav__menu-item a, .o-link {
   text-decoration: none; }
-  a:hover, .o-link:hover {
+  .c-main-nav__menu-item a:hover, .o-link:hover {
     opacity: .8;
     transition-duration: 400ms; }
 

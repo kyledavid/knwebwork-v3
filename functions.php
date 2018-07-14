@@ -131,7 +131,7 @@ function kn_webwork_3_0_scripts() {
 		wp_enqueue_script( 'wwu-scripts', get_template_directory_uri() . '/js/work-with-us.js', array('jquery'), null, true);
 	}
 
-	if ( is_page('portfolio') ) {
+	if ( is_archive() ) {
 		wp_enqueue_script( 'wwu-scripts', get_template_directory_uri() . '/js/work-with-us.js', array('jquery'), null, true);
 	}
 

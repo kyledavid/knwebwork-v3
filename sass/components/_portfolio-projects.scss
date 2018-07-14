@@ -80,6 +80,9 @@
     line-height: 50px;
 
     list-style-type: none;
+    li:first-of-type {
+        font-weight: 400;
+    }
 }
 
 .l-projects__tech-list {
