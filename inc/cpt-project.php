@@ -27,7 +27,7 @@ function create_project_cpt() {
         'capability_type'       => 'post',
         'hierarchical'          => false,
         'menu_icon'             => 'dashicons-portfolio',
-        'rewrite'               => array( 'slug' => 'portfolio', 'with_front' => false ),
+        'rewrite'               => array( 'slug' => 'portfolios', 'with_front' => false ),
         'has_archive'           => true,
         'supports'              => array( 'title', 'thumbnail' ),
     );

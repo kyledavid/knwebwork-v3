@@ -11,7 +11,6 @@
  *
  * @package KN_Webwork_3.0
  */
-
 ?>
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
