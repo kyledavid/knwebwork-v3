@@ -1645,10 +1645,15 @@ body {
     text-align: center; } }
 
 .c-main-nav__menu {
-  opacity: 0;
   position: relative;
-  left: 100px;
   transition-duration: 800ms; }
+
+.l-main-nav__menu {
+  left: 0; }
+
+.l-main-nav__menu--hidden {
+  opacity: 0;
+  left: 100px; }
 
 .c-main-nav__logo {
   float: left; }
@@ -1688,24 +1693,32 @@ body {
 
 @media (max-width: 575.98px) {
   .c-main-nav__menu-container {
-    background-color: rgba(64, 64, 64, 0.5); }
+    background-color: rgba(64, 64, 64, 0.5);
+    transition-duration: 600ms; }
   .l-main-nav__menu-container {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0; }
+  .l-main-nav__menu-container--hidden {
+    left: 100%; }
   .c-main-nav__menu {
-    background-color: #222222; }
+    background-color: #222222;
+    opacity: 1;
+    transition-duration: 400ms;
+    transition-delay: 100ms; }
   .l-main-nav__menu {
     margin: 0;
     padding-left: 0;
     position: absolute;
     top: 0;
-    left: 58% !important;
+    left: 58%;
     right: 0;
     bottom: 0;
     z-index: 4; }
+  .l-main-nav__menu--hidden {
+    left: 100%; }
   .c-main-nav__menu-item {
     color: #fff3e9;
     font-size: 38px;

@@ -132,8 +132,10 @@ function kn_webwork_3_0_scripts() {
 	}
 
 	if ( is_archive() ) {
-		wp_enqueue_script( 'wwu-scripts', get_template_directory_uri() . '/js/work-with-us.js', array('jquery'), null, true);
+		wp_enqueue_script( 'portfolio-scripts', get_template_directory_uri() . '/js/portfolio', array('jquery'), null, true);
 	}
+
+	wp_enqueue_script( 'header-scripts', get_template_directory_uri() . '/js/header.js', array(), null, true );
 
 	wp_enqueue_script( 'kn-webwork-3-0-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

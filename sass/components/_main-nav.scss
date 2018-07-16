@@ -1,10 +1,16 @@
 .c-main-nav__menu {
-    opacity: 0;
-
     position: relative;
-    left: 100px;
-
+    
     transition-duration: 800ms;
+}
+
+.l-main-nav__menu {
+    left: 0;
+}
+
+.l-main-nav__menu--hidden {
+    opacity: 0;
+    left: 100px;
 }
 
 .c-main-nav__logo {
@@ -66,6 +72,7 @@
 @include media-breakpoint-down(xs) {
     .c-main-nav__menu-container {
         background-color: rgba(64, 64, 64, .5);
+        transition-duration: 600ms;
     }
 
     .l-main-nav__menu-container {
@@ -75,8 +82,17 @@
         right: 0;
         bottom: 0;
     }
+
+    .l-main-nav__menu-container--hidden {
+        left: 100%;
+    }
+
     .c-main-nav__menu {
-        background-color: $color__black;        
+        background-color: $color__black;     
+
+        opacity: 1;
+        transition-duration: 400ms;
+        transition-delay: 100ms;
     }
 
     .l-main-nav__menu {
@@ -85,12 +101,17 @@
 
         position: absolute;
         top: 0;
-        left: 58% !important;
+        left: 58%;
         right: 0;
         bottom: 0;
 
         z-index: 4;
     }
+
+    .l-main-nav__menu--hidden {
+        left: 100%;
+    }
+
     .c-main-nav__menu-item {
         color: $color__off-white;
         font-size: 38px;
