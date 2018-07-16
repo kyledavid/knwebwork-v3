@@ -78,6 +78,7 @@
     .c-main-nav__menu {
         background-color: $color__black;        
     }
+
     .l-main-nav__menu {
         margin: 0;
         padding-left: 0;
@@ -95,10 +96,24 @@
         font-size: 38px;
         text-align: center;
     }
-    
+
     .l-main-nav__menu-item {
         float: initial;
         margin-left: 0;
         margin-top: 50px;
+    }
+    .c-main-nav__menu-toggle {
+        border: 0;
+        background-color: rgba(255,255,255,0);
+        background-image: url('../knww-v3.0/img/1x/burgers.png');
+        position: absolute;
+        z-index: 5;
+        width: 45px;
+        height: 23px;
+        &:hover {
+            background-image: url('../knww-v3.0/img/1x/ex.png');
+            height: 33px;
+            width: 33px;
+        }
     }
 }

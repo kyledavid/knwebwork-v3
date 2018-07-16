@@ -31,7 +31,7 @@
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/knww-logo.png">
 				</a>
 			</div>
-			<button class="c-main-nav__menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kn-webwork-3-0' ); ?></button>
+			<button class="c-main-nav__menu-toggle l-main-nav__menu-toggle" aria-controls="primary-menu" aria-expanded="false"></button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
