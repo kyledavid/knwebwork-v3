@@ -68,3 +68,25 @@
     margin-top: 80px;
     padding: 0;
 }
+
+@include media-breakpoint-down(xs) {
+    .l-hero {
+        margin-top: 60px;
+    }
+    .c-hero__intro {
+        font-size: 46px;
+    }
+    .c-hero__title {
+        font-size: 56px;
+    }
+    .l-hero__title {
+        margin-top: 50px;
+    }
+    .c-hero__subtitle {
+        font-size: 38px;
+    }
+    .l-hero__cta {
+        display: block;
+        text-align: center;
+    }
+}

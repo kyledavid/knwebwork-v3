@@ -62,3 +62,38 @@
         display: none;
     }
 }
+
+@include media-breakpoint-down(xs) {
+    .c-main-nav__menu-container {
+        background-color: rgba(64, 64, 64, .5);
+    }
+    .l-main-nav__menu-container {
+        background-color: rgba(64, 64, 64, .5);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .c-main-nav__menu {
+        background-color: $color__black;
+
+        margin: 0;
+        padding-left: 0;
+
+        position: absolute;
+        top: 0;
+        left: 70%;
+        right: 0;
+        bottom: 0;
+
+        z-index: 4;
+    }
+    .c-main-nav__menu-item {
+        margin-left: 0;
+        text-align: center;
+
+        float: initial;
+    }
+}
