@@ -36,8 +36,8 @@
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
 				'menu_id'        => 'primary-menu',
-				'menu_class'	 => 'c-main-nav__menu',
-				'container_class'=> 'l-main-nav__menu-container',
+				'menu_class'	 => 'c-main-nav__menu l-main-nav__menu',
+				'container_class'=> 'c-main-nav__menu-container l-main-nav__menu-container',
 			) );
 			?>
 		</nav><!-- #site-navigation -->

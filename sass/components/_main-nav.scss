@@ -67,9 +67,8 @@
     .c-main-nav__menu-container {
         background-color: rgba(64, 64, 64, .5);
     }
-    .l-main-nav__menu-container {
-        background-color: rgba(64, 64, 64, .5);
 
+    .l-main-nav__menu-container {
         position: absolute;
         top: 0;
         left: 0;
@@ -77,23 +76,29 @@
         bottom: 0;
     }
     .c-main-nav__menu {
-        background-color: $color__black;
-
+        background-color: $color__black;        
+    }
+    .l-main-nav__menu {
         margin: 0;
         padding-left: 0;
 
         position: absolute;
         top: 0;
-        left: 70%;
+        left: 58% !important;
         right: 0;
         bottom: 0;
 
         z-index: 4;
     }
     .c-main-nav__menu-item {
-        margin-left: 0;
+        color: $color__off-white;
+        font-size: 38px;
         text-align: center;
-
+    }
+    
+    .l-main-nav__menu-item {
         float: initial;
+        margin-left: 0;
+        margin-top: 50px;
     }
 }
