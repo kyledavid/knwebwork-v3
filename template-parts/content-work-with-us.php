@@ -12,10 +12,10 @@
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="col-sm-6 offset-sm-3">
         <header class="entry-header">
-            <?php the_title( '<h1 class="o-page-header l-page-header">', '</h1>' ); ?>
+            <?php the_title( '<h1 class="o-page-header l-page-header l-page-header--hidden">', '</h1>' ); ?>
         </header><!-- .entry-header -->
         
-            <form class="c-work-form l-work-form">
+            <form class="c-work-form l-work-form l-work-form--hidden">
                 <label class="c-work-form__label l-work-form__label">NAME</label>
                 <input id="client-name" name="client-name" class="c-work-form__field l-work-form__field"></input>
                 <label class="c-work-form__label l-work-form__label l-work-form__label--half">EMAIL</label><!--

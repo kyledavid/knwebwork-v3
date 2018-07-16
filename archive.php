@@ -16,7 +16,7 @@ get_header();
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
-					<h1 class="o-page-header l-page-header">Projects</h1>
+					<h1 class="o-page-header l-page-header l-page-header--hidden">Projects</h1>
 				</header><!-- .page-header -->
 				<div class="c-projects l-projects">
 					<?php

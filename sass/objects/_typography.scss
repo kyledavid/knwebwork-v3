@@ -19,6 +19,13 @@ body {
     margin-top: 80px;
 
     position: relative;
+    right: 0;
+
+    opacity: 1;
+    transition-duration: 400ms;
+}
+
+.l-page-header--hidden {
     right: 50px;
 
     opacity: 0;

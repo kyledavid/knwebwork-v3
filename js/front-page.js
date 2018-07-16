@@ -1,13 +1,14 @@
 (function($){
     var showTitle = function() {
-        $('.c-hero__title').css({right: 0, opacity: 1, transitionDuration: '1200ms', transitionProperty: 'right, opacity',})
-        $('.c-hero__subtitle').css({left: 0, opacity: 1, transitionDuration: '1200ms',})
+        $('.c-hero__title').removeClass('l-hero__title--hidden')
+        $('.c-hero__subtitle').removeClass('l-hero__subtitle--hidden')
     }
+
     var showIntro = function() {
-        $('.c-hero__intro').css({right: 0, opacity: 1, transitionDuration: '800ms',})
+        $('.c-hero__intro').removeClass('l-hero__intro--hidden')
     }
     var showCTA = function() {
-        $('.c-hero__cta').css({left: 0, opacity: 1, transitionDuration: '600ms', transitionProperty: 'left, opacity',})
+        $('.c-hero__cta').removeClass('l-hero__cta--hidden')
     }
 
     $(document).ready(function() {

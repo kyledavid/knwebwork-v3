@@ -1521,6 +1521,11 @@ body {
 .l-work-form {
   margin-top: 48px;
   position: relative;
+  right: 0;
+  opacity: 1;
+  transition-duration: 800ms; }
+
+.l-work-form--hidden {
   right: 100px;
   opacity: 0; }
 
@@ -1580,54 +1585,70 @@ body {
 .l-work-form__label--half {
   width: 50%; }
 
+.l-hero {
+  margin-top: 125px; }
+
 .c-hero__intro {
   position: relative;
   right: 0;
   font-size: 50px;
   font-weight: 100;
   text-align: center;
-  opacity: 0; }
-
-.c-hero__title {
-  position: relative;
-  right: 50px;
-  font-size: 72px;
-  font-style: italic;
-  font-weight: 400;
-  opacity: 0; }
-
-.c-hero__subtitle {
-  position: relative;
-  left: 250px;
-  display: block;
-  font-size: 48px;
-  font-style: normal; }
-
-.c-hero__cta {
-  position: relative;
-  right: 150px;
-  color: #A9FFF5;
-  font-size: 34px;
-  font-style: italic;
-  text-decoration: none;
-  opacity: 0; }
-
-.l-hero {
-  margin-top: 125px; }
+  opacity: 1;
+  transition-duration: 800ms; }
 
 .l-hero__intro {
   margin-bottom: 0; }
 
+.l-hero__intro--hidden {
+  opacity: 0; }
+
+.c-hero__title {
+  position: relative;
+  font-size: 72px;
+  font-style: italic;
+  font-weight: 400;
+  opacity: 1;
+  transition-duration: 1200ms; }
+
 .l-hero__title {
   margin-top: 42px; }
+
+.l-hero__title--hidden {
+  right: 50px;
+  opacity: 0; }
+
+.c-hero__subtitle {
+  position: relative;
+  display: block;
+  font-size: 48px;
+  font-style: normal;
+  transition-duration: 1200ms; }
 
 .l-hero__subtitle {
   margin-top: 15px; }
 
+.l-hero__subtitle--hidden {
+  left: 250px; }
+
+.c-hero__cta {
+  position: relative;
+  color: #A9FFF5;
+  font-size: 34px;
+  font-style: italic;
+  text-decoration: none;
+  opacity: 1;
+  transition-duration: 600ms; }
+
 .l-hero__cta {
   display: inline-block;
   margin-top: 80px;
-  padding: 0; }
+  padding: 0;
+  opacity: 1; }
+
+.l-hero__cta--hidden {
+  right: 150px;
+  opacity: 0; }
 
 @media (max-width: 575.98px) {
   .l-hero {
@@ -1871,5 +1892,10 @@ body {
 .l-page-header {
   margin-top: 80px;
   position: relative;
+  right: 0;
+  opacity: 1;
+  transition-duration: 400ms; }
+
+.l-page-header--hidden {
   right: 50px;
   opacity: 0; }
