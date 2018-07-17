@@ -30,3 +30,12 @@
         text-decoration: none;
     }
 }
+
+@include media-breakpoint-down(xs) {
+    .l-site-footer__site-info {
+        transform: none;
+    }
+    .l-site-footer__contact {
+        display: none;
+    }
+}

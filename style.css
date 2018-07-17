@@ -1518,6 +1518,12 @@ body {
     color: inherit;
     text-decoration: none; }
 
+@media (max-width: 575.98px) {
+  .l-site-footer__site-info {
+    transform: none; }
+  .l-site-footer__contact {
+    display: none; } }
+
 .l-work-form {
   margin-top: 48px;
   position: relative;
