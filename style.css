@@ -1522,7 +1522,12 @@ body {
   .l-site-footer__site-info {
     transform: none; }
   .l-site-footer__contact {
-    display: none; } }
+    display: none; }
+  .l-site-footer {
+    position: initial;
+    padding: 2em; }
+  .l-site-footer__site-info {
+    position: initial; } }
 
 .l-work-form {
   margin-top: 48px;
@@ -1658,6 +1663,7 @@ body {
 
 @media (max-width: 575.98px) {
   .l-hero {
+    min-height: 70vh;
     margin-top: 60px; }
   .c-hero__intro {
     font-size: 46px; }

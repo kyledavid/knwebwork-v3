@@ -94,6 +94,7 @@
 
 @include media-breakpoint-down(xs) {
     .l-hero {
+        min-height: 70vh;
         margin-top: 60px;
     }
     .c-hero__intro {
