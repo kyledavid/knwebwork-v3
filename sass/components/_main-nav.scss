@@ -96,6 +96,8 @@
     }
 
     .l-main-nav__menu {
+        display: block;
+        
         margin: 0;
         padding-left: 0;
 
@@ -110,6 +112,7 @@
 
     .l-main-nav__menu--hidden {
         left: 100%;
+        display: none;
     }
 
     .c-main-nav__menu-item {

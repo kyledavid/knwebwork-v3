@@ -1736,6 +1736,7 @@ body {
     transition-duration: 400ms;
     transition-delay: 100ms; }
   .l-main-nav__menu {
+    display: block;
     margin: 0;
     padding-left: 0;
     position: absolute;
@@ -1745,7 +1746,8 @@ body {
     bottom: 0;
     z-index: 4; }
   .l-main-nav__menu--hidden {
-    left: 100%; }
+    left: 100%;
+    display: none; }
   .c-main-nav__menu-item {
     color: #fff3e9;
     font-size: 38px;
@@ -1859,6 +1861,18 @@ body {
   right: 0;
   transform: translateY(-50%);
   z-index: 3; }
+
+@media (max-width: 575.98px) {
+  .l-projects {
+    flex-flow: column; }
+  .l-projects__project {
+    margin: 0;
+    margin-top: 2.5em; }
+    .l-projects__project:first-of-type {
+      margin-top: 0;
+      margin-right: 0; }
+    .l-projects__project:nth-of-type(2) {
+      margin-top: 2.5em; } }
 
 /*--------------------------------------------------------------
 # Objects
