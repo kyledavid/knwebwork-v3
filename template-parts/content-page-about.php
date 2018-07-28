@@ -10,34 +10,35 @@
 ?>
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="col-sm-6 offset-sm-3">
+    <div class="container">
         <header class="entry-header">
             <?php the_title( '<h1 class="o-page-header o-page-header--team l-page-header l-page-header--hidden">', '</h1>' ); ?>
         </header><!-- .entry-header -->
-        
-        <div class="c-profile l-profile">
-        	<div class="c-profile__preview l-profile__preview">
-        		<img src="" class="c-profile__dev" alt="Las Vegas Developer Kyle Steinle">
-        		<img src="" class="c-profile__dev--hover" alt="Las Vegas Developer Kyle Steinle">
-				<div class="c-profile__overlay">
-					<h2 class="c-profile__name l-profile__name">kyle steinle</h2>
-					<p class="c-profile__cta l-profile__cta">find out more</p>
-				</div>				
-				<div class="c-profile__social"></div>        	
-        	</div>
-        </div>
+        <div class="row">
+	        <div class="c-profile l-profile offset-sm-3 col-sm-3">
+	        	<div class="c-profile__preview l-profile__preview">
+	        		<img src="<?php echo get_template_directory_uri(); ?>/img/kyle-steinle-developer.jpg" class="c-profile__dev" alt="Las Vegas Developer Kyle Steinle">
+	        		<img class="c-profile__dev--hover" alt="Las Vegas Developer Kyle Steinle">
+					<div class="c-profile__overlay">
+						<h2 class="c-profile__name l-profile__name">kyle steinle</h2>
+						<p class="c-profile__cta l-profile__cta">find out more</p>
+					</div>				
+					<div class="c-profile__social"></div>        	
+	        	</div>
+	        </div>
 
-        <div class="c-profile--neal l-profile">
-        	<div class="c-profile__preview l-profile__preview">
-        		<img src="" class="c-profile__dev" alt="Las Vegas Developer Neal Hill">
-        		<img src="" class="c-profile__dev--hover" alt="Las Vegas Developer Neal Hill">
-				<div class="c-profile__overlay">
-					<h2 class="c-profile__name l-profile__name">neal hill</h2>
-					<p class="c-profile__cta l-profile__cta">find out more</p>
-				</div>				
-				<div class="c-profile__social"></div>        	
-        	</div>
-        </div>
+	        <div class="c-profile l-profile offset-sm-1 col-sm-3">
+	        	<div class="c-profile__preview l-profile__preview">
+	        		<img src="<?php echo get_template_directory_uri(); ?>/img/neal-hill-developer.jpg" class="c-profile__dev" alt="Las Vegas Developer Neal Hill">
+	        		<img src="" class="c-profile__dev--hover" alt="Las Vegas Developer Neal Hill">
+					<div class="c-profile__overlay">
+						<h2 class="c-profile__name l-profile__name">neal hill</h2>
+						<p class="c-profile__cta l-profile__cta">find out more</p>
+					</div>				
+					<div class="c-profile__social"></div>        	
+	        	</div>
+	        </div>
+	    </div>
         
 
         <?php if ( get_edit_post_link() ) : ?>
