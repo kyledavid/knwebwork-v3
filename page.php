@@ -21,8 +21,10 @@ get_header();
 		<?php
 		while ( have_posts() ) :
 			the_post();
+			$pageName = $post->post_name;
+			if ( $pageName ) { $pageName = '-' . $pageName; }
 
-			get_template_part( 'template-parts/content', 'page' );
+			get_template_part( 'template-parts/content', 'page' . $pageName );
 
 		endwhile; // End of the loop.
 		?>
