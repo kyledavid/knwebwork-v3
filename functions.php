@@ -135,7 +135,7 @@ function kn_webwork_3_0_scripts() {
 		wp_enqueue_script( 'portfolio-scripts', get_template_directory_uri() . '/js/portfolio.js', array('jquery'), null, true);
 	}
 
-	wp_enqueue_script( 'header-scripts', get_template_directory_uri() . '/js/header.js', array(), null, true );
+	wp_enqueue_script( 'header-scripts', get_template_directory_uri() . '/js/header.js', array('jquery'), null, true );
 
 	wp_enqueue_script( 'kn-webwork-3-0-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
