@@ -17,20 +17,22 @@
         <div class="row d-flex flex-nowrap">
 	        <div class="c-profile l-profile working offset-sm-3 d-flex expand">
 	        	<div class="c-profile__preview l-profile__preview">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/kyle-steinle-cutout-4.jpg" class="c-profile__dev--hover" alt="Las Vegas Developer Kyle Steinle">
 	        		<img src="<?php echo get_template_directory_uri(); ?>/img/kyle-steinle-developer.jpg" class="c-profile__dev" alt="Las Vegas Developer Kyle Steinle">
-	        		<img src="<?php echo get_template_directory_uri(); ?>/img/kyle-steinle-cutout-4.jpg" class="c-profile__dev--hover" alt="Las Vegas Developer Kyle Steinle">
+
 					<div class="c-profile__overlay l-profile__overlay">
 						<h2 class="c-profile__name l-profile__name">kyle steinle</h2>
 						<p class="c-profile__cta l-profile__cta">find out more</p>
 					</div>		
-                    <div class="c-profile__social"></div>        	
+                    <div class="c-profile__social"></div>
+                    <div class="c-profile__bio l-profile__bio">
+                        <h2 class="c-profile__bio--name">kyle steinle</h2>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam eraat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum 
+                        </div>                
+                    </div>               	
 	        	</div>
-                <div class="c-profile__bio">
-                    <h2 class="c-profile__bio--name">kyle steinle</h2>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam eraat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum 
-                    </div>                
-                </div>       
+                
                 
 	        </div>
 

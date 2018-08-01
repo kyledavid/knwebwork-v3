@@ -1,6 +1,11 @@
 .c-profile {
     cursor: crosshair;
     position: relative;
+    overflow: hidden;
+}
+
+.c-profile--expanded {
+    border: 5px solid #ffffff;
 }
 
 .c-profile:hover {
@@ -13,7 +18,10 @@
 }
 
 .l-profile--expanded {
+    border: 5px solid #ffffff;
+    padding: 0;
     max-width: 100%;
+    flex: 1;
 }
 
 .l-profile--shrunk {
@@ -23,15 +31,13 @@
     position: relative;
     max-width: 0;
     margin: 0;
-    transition-delay: 300ms, 0s, 1200ms;
-    transition-duration: 900ms, 300ms, 50ms;
+    transition-delay: 100ms, 0s, 400ms;
+    transition-duration: 300ms, 100ms, 50ms;
     transition-timing-function: linear;
     transition-property: max-width, margin, padding;
 }
 
 .l-profile.working {
-    border: 5px solid #ffffff;
-    padding: 0;
     img {
         max-width: 274px;
     }
@@ -55,8 +61,22 @@
     padding: 0;
 }
 
+.c-profile__preview {
+    position: relative;
+}
+
+.l-profile__bio {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 500px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
 .c-profile__dev {
     max-width: 100%;
+    display: block;
 }
 
 .c-profile:hover .c-profile__dev {
