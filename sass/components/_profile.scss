@@ -9,6 +9,46 @@
 
 .l-profile {
     padding: 5px;
+
+}
+
+.l-profile--expanded {
+    max-width: 100%;
+}
+
+.l-profile--shrunk {
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    max-width: 0;
+    margin: 0;
+    transition-delay: 300ms, 0s, 1200ms;
+    transition-duration: 900ms, 300ms, 50ms;
+    transition-timing-function: linear;
+    transition-property: max-width, margin, padding;
+}
+
+.l-profile.working {
+    border: 5px solid #ffffff;
+    padding: 0;
+    img {
+        max-width: 274px;
+    }
+    .c-profile__overlay {
+        opacity: 1;
+        position: relative;
+        display: none;
+        margin-top: 0;
+        background-color: initial;
+
+        .c-profile__cta {
+            display: none;
+        }
+        .c-profile__bio {
+            display: inline-block;
+        }
+    }
 }
 
 .l-profile:hover {
@@ -75,4 +115,13 @@
 
 .l-profile__cta {
     margin-top: 0;
+}
+
+.speshul {
+    max-width: initial;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 275px;
 }
