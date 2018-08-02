@@ -1,7 +1,6 @@
 .c-profile {
     cursor: crosshair;
     position: relative;
-    overflow: hidden;
 }
 
 .c-profile--expanded {
@@ -22,19 +21,37 @@
     padding: 0;
     max-width: 100%;
     flex: 1;
+    overflow: hidden;
+
+    .c-profile__bio {
+        display: block;
+    }
+}
+
+.l-profile--half-expanded {
+    transition-duration: 200ms;
+    transition-property: padding-bottom;
+
+    border: 5px solid #ffffff;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.shrink {
+    margin-right: 1 / 12 * 100%;
 }
 
 .l-profile--shrunk {
     overflow: hidden;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
     position: relative;
     max-width: 0;
     margin: 0;
-    transition-delay: 100ms, 0s, 400ms;
-    transition-duration: 300ms, 100ms, 50ms;
+    transition-delay: 200ms, 0s, 800ms, 2s;
+    transition-duration: 600ms, 200ms, 200ms, 50ms;
     transition-timing-function: linear;
-    transition-property: max-width, margin, padding;
+    transition-property: max-width, margin-left, margin-right, padding;
 }
 
 .l-profile.working {
@@ -65,13 +82,8 @@
     position: relative;
 }
 
-.l-profile__bio {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 500px;
-    padding-left: 8%;
-    padding-right: 8%;
+.l-profile__preview {
+    max-width: 274px;
 }
 
 .c-profile__dev {
@@ -145,3 +157,4 @@
     bottom: 0;
     width: 275px;
 }
+

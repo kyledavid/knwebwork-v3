@@ -1882,8 +1882,7 @@ body {
 
 .c-profile {
   cursor: crosshair;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
 
 .c-profile--expanded {
   border: 5px solid #ffffff; }
@@ -1898,19 +1897,32 @@ body {
   border: 5px solid #ffffff;
   padding: 0;
   max-width: 100%;
-  flex: 1; }
+  flex: 1;
+  overflow: hidden; }
+  .l-profile--expanded .c-profile__bio {
+    display: block; }
+
+.l-profile--half-expanded {
+  transition-duration: 200ms;
+  transition-property: padding-bottom;
+  border: 5px solid #ffffff;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0; }
+
+.shrink {
+  margin-right: 8.33333%; }
 
 .l-profile--shrunk {
   overflow: hidden;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
   position: relative;
   max-width: 0;
   margin: 0;
-  transition-delay: 100ms, 0s, 400ms;
-  transition-duration: 300ms, 100ms, 50ms;
+  transition-delay: 200ms, 0s, 800ms, 2s;
+  transition-duration: 600ms, 200ms, 200ms, 50ms;
   transition-timing-function: linear;
-  transition-property: max-width, margin, padding; }
+  transition-property: max-width, margin-left, margin-right, padding; }
 
 .l-profile.working img {
   max-width: 274px; }
@@ -1932,13 +1944,8 @@ body {
 .c-profile__preview {
   position: relative; }
 
-.l-profile__bio {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 500px;
-  padding-left: 8%;
-  padding-right: 8%; }
+.l-profile__preview {
+  max-width: 274px; }
 
 .c-profile__dev {
   max-width: 100%;
@@ -1996,6 +2003,35 @@ body {
   right: 0;
   bottom: 0;
   width: 275px; }
+
+.l-profile__bio {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 500px;
+  padding-left: 8%;
+  padding-right: 8%;
+  display: none; }
+
+.l-profile__proficiencies {
+  width: 80%;
+  height: 90px;
+  margin: auto;
+  margin-top: 2em;
+  background-color: #555;
+  content: " "; }
+
+.l-profile__close {
+  position: absolute;
+  top: 20px;
+  right: 40px; }
+
+.l-profile__social {
+  position: absolute;
+  bottom: -80px;
+  width: 90%;
+  height: 70px;
+  background-color: pink; }
 
 /*--------------------------------------------------------------
 # Objects
