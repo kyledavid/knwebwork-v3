@@ -1,0 +1,47 @@
+.c-profile__overlay {
+    background-color: rgba(17, 17, 22, 0.90);
+    opacity: 0;
+    transition: all 1ms;
+}
+
+.c-profile:hover .c-profile__overlay {
+    opacity: 1;
+}
+
+.l-profile__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.c-profile__name {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: .3em;
+    text-align: center;
+
+    margin-bottom: .7em;
+}
+
+.l-profile__name {
+    margin-top: 100px;
+}
+
+.c-profile__cta {
+    color: #53e9f1;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: .2em;
+    text-align: center;
+}
+
+.l-profile__cta {
+    margin-top: 0;
+}
+
+.l-profile--expanded .c-profile__overlay,
+.l-profile--half-expanded .c-profile__overlay {
+    display: none;
+}

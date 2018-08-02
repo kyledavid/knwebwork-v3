@@ -1893,50 +1893,8 @@ body {
 .l-profile {
   padding: 5px; }
 
-.l-profile--expanded {
-  border: 5px solid #ffffff;
-  padding: 0;
-  max-width: 100%;
-  flex: 1;
-  overflow: hidden; }
-  .l-profile--expanded .c-profile__bio {
-    display: block; }
-
-.l-profile--half-expanded {
-  transition-duration: 200ms;
-  transition-property: padding-bottom;
-  border: 5px solid #ffffff;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0; }
-
-.shrink {
-  margin-right: 8.33333%; }
-
-.l-profile--shrunk {
-  overflow: hidden;
-  padding: 0;
-  position: relative;
-  max-width: 0;
-  margin: 0;
-  transition-delay: 200ms, 0s, 800ms, 2s;
-  transition-duration: 600ms, 200ms, 200ms, 50ms;
-  transition-timing-function: linear;
-  transition-property: max-width, margin-left, margin-right, padding; }
-
 .l-profile.working img {
   max-width: 274px; }
-
-.l-profile.working .c-profile__overlay {
-  opacity: 1;
-  position: relative;
-  display: none;
-  margin-top: 0;
-  background-color: initial; }
-  .l-profile.working .c-profile__overlay .c-profile__cta {
-    display: none; }
-  .l-profile.working .c-profile__overlay .c-profile__bio {
-    display: inline-block; }
 
 .l-profile:hover {
   padding: 0; }
@@ -1960,41 +1918,6 @@ body {
 
 .c-profile:hover .c-profile__dev--hover {
   display: block; }
-
-.c-profile__overlay {
-  background-color: rgba(17, 17, 22, 0.9);
-  opacity: 0;
-  transition: all 1ms; }
-
-.c-profile:hover .c-profile__overlay {
-  opacity: 1; }
-
-.l-profile__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-
-.c-profile__name {
-  font-size: 48px;
-  font-weight: 600;
-  letter-spacing: .3em;
-  text-align: center;
-  margin-bottom: .7em; }
-
-.l-profile__name {
-  margin-top: 100px; }
-
-.c-profile__cta {
-  color: #53e9f1;
-  font-size: 1.2em;
-  font-weight: 600;
-  letter-spacing: .2em;
-  text-align: center; }
-
-.l-profile__cta {
-  margin-top: 0; }
 
 .speshul {
   max-width: initial;
@@ -2032,6 +1955,93 @@ body {
   width: 90%;
   height: 70px;
   background-color: pink; }
+
+.c-profile__overlay {
+  background-color: rgba(17, 17, 22, 0.9);
+  opacity: 0;
+  transition: all 1ms; }
+
+.c-profile:hover .c-profile__overlay {
+  opacity: 1; }
+
+.l-profile__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.c-profile__name {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: .3em;
+  text-align: center;
+  margin-bottom: .7em; }
+
+.l-profile__name {
+  margin-top: 100px; }
+
+.c-profile__cta {
+  color: #53e9f1;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: .2em;
+  text-align: center; }
+
+.l-profile__cta {
+  margin-top: 0; }
+
+.l-profile--expanded .c-profile__overlay,
+.l-profile--half-expanded .c-profile__overlay {
+  display: none; }
+
+.l-profile--expanded {
+  border: 5px solid #ffffff;
+  padding: 0;
+  max-width: 100%;
+  flex: 1;
+  overflow: hidden; }
+  .l-profile--expanded .c-profile__bio {
+    display: block; }
+
+.l-profile--half-expanded {
+  transition-duration: 200ms;
+  transition-property: padding-bottom;
+  border: 5px solid #ffffff;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0; }
+
+.shrink {
+  margin-right: 8.33333%; }
+
+.l-profile--shrunk {
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  max-width: 0;
+  margin: 0;
+  transition-delay: 200ms, 0s, 800ms, 2s;
+  transition-duration: 600ms, 200ms, 200ms, 50ms;
+  transition-timing-function: linear;
+  transition-property: max-width, margin-left, margin-right, padding; }
+
+.l-profile--unshrinking {
+  padding: 5px;
+  margin-left: 8.33333%;
+  margin-right: 8.33333%;
+  max-width: 100%;
+  transition-delay: 0s, 200ms, 250ms, 850ms;
+  transition-duration: 200ms, 50ms, 600ms, 200ms;
+  transition-property: margin-right, padding, max-width, margin-left; }
+
+.c-profile.l-profile--expanded .c-profile__dev,
+.c-profile.l-profile--half-expanded .c-profile__dev {
+  display: block; }
+
+.c-profile.l-profile--expanded .c-profile__dev--hover,
+.c-profile.l-profile--half-expanded .c-profile__dev--hover {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Objects

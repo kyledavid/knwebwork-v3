@@ -16,10 +16,19 @@
     }
     var closeExpanded = function(e) {
         e.stopPropagation()
-        $('.l-profile--shrunk').removeClass('l-profile--shrunk')
-        $('.l-profile--expanded').css({paddingBottom: 0})
-        $('.l-profile--expanded').removeClass('l-profile--expanded')
+        $('.l-profile--shrunk').addClass('l-profile--unshrinking')
+        setTimeout(cleanUpExpansion, 1050)
+    }
 
+    var cleanUpExpansion = function() {
+        $('.l-profile--expanded').removeClass('l-profile--expanded')
+        $('.l-profile--unshrinking').removeClass('l-profile--unshrinking')
+        $('.l-profile--shrunk').removeClass('l-profile--shrunk')
+        $('.l-profile--half-expanded').css({paddingBottom: 0})
+        setTimeout(function(){
+            $('.l-profile--half-expanded').removeClass('l-profile--half-expanded')
+        }, 200)
+        
     }
 
     var socialHeight = $('.c-profile__social').height() + 40
