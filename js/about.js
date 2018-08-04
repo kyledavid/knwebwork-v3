@@ -5,7 +5,7 @@
         $('.expand').css({paddingBottom: height})
     }
     var expandFull = function() {
-        setTimeout(shrinkColumn, 500)
+        shrinkColumn()
         expandColumn()
     }
     var shrinkColumn = function() {
@@ -36,7 +36,7 @@
     $(document).ready(function() {
         $('.expand').click(function() {
             expandHalf(socialHeight)
-            setTimeout(expandFull, 600)
+            setTimeout(expandFull, 100)
         })
         $('.c-profile__close').click(function() {
             closeExpanded(event)
