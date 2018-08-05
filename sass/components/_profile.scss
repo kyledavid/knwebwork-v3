@@ -1,15 +1,14 @@
 .c-profile {
     cursor: crosshair;
     position: relative;
-    overflow: hidden;
 }
 
 .l-profile--expanded {
-    //border: 5px solid #ffffff;
+    //
 
-    .c-profile__border {
-        max-width: 100%;
-        //  transition: max-width 100ms;
+    .l-profile__bio-wrapper {
+        border: 5px solid #ffffff;
+        width: 1000px;
     }
 }
 
@@ -19,9 +18,6 @@
 
 .l-profile {
     padding: 0 !important;
-    flex: 1;
-    max-width: 100%;
-
 }
 
 .c-profile__border {

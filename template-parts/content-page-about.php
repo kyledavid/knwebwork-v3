@@ -15,8 +15,7 @@
             <h1 class="o-page-header o-page-header--team l-page-header offset-sm-3">our team</h1>
         </header><!-- .entry-header -->
         <div class="row d-flex flex-nowrap">
-            <div class="c-profile l-profile working offset-sm-3 expand">
-                <div class="c-profile__border"></div>
+            <div class="c-profile l-profile working offset-sm-3 col-sm-3 expand">
                 <div class="c-profile__preview l-profile__preview">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/kyle-steinle-cutout-4.jpg" class="c-profile__dev--hover" alt="Las Vegas Developer Kyle Steinle">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/kyle-steinle-developer.jpg" class="c-profile__dev" alt="Las Vegas Developer Kyle Steinle">
@@ -25,8 +24,10 @@
                         <h2 class="c-profile__name l-profile__name">kyle steinle</h2>
                         <p class="c-profile__cta l-profile__cta">find out more</p>
                     </div>      
-                    
+
                     <div class="c-profile__social l-profile__social"></div>           
+                </div>
+                <div class="c-profile__bio-wrapper l-profile__bio-wrapper">
                     <div class="c-profile__bio l-profile__bio">
                         <h2 class="c-profile__bio--name">kyle steinle</h2>
                         <div>
@@ -37,11 +38,11 @@
                     </div>
                 </div>
                 
-                
-                
             </div>
 
-            <div class="c-profile l-profile offset-sm-1 shrink">
+            <div class="l-profile--spacer"></div>
+
+            <div class="c-profile l-profile offset-sm-1 col-sm-3 shrink">
                 <div class="c-profile__preview l-profile__preview">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/neal-hill-developer.jpg" class="c-profile__dev speshul" alt="Las Vegas Developer Neal Hill">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/neal-hill-cutout.jpg" class="c-profile__dev--hover" alt="Las Vegas Developer Neal Hill">

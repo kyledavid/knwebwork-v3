@@ -24,6 +24,10 @@ $totalTime: $baseTime * 6 + $baseTime * 4 + $baseTime / 2;
     padding-top: 0;
 }*/
 
+.l-profile--spacer {
+    flex: 1;
+}
+
 .shrink {
     margin-right: 1 / 12 * 100%;
 }
