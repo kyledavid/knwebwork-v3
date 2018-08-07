@@ -27,6 +27,7 @@
 
                     <div class="c-profile__social l-profile__social"></div>           
                 </div>
+                <div class="l-profile__border"></div>
                 <div class="c-profile__bio-wrapper l-profile__bio-wrapper">
                     <div class="c-profile__bio l-profile__bio">
                         <h2 class="c-profile__bio--name">kyle steinle</h2>

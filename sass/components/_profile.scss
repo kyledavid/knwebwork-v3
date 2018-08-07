@@ -3,32 +3,12 @@
     position: relative;
 }
 
-.l-profile--expanded {
-    //
-
-    .l-profile__bio-wrapper {
-        border: 5px solid #ffffff;
-        width: 1000px;
-    }
-}
-
 .c-profile:hover {
     //border: 5px solid #ffffff;
 }
 
 .l-profile {
     padding: 0 !important;
-}
-
-.c-profile__border {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 5px solid #fff;
-    z-index: 5;
-    max-width: 274px;
 }
 
 .l-profile.working {

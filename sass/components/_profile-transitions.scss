@@ -1,5 +1,5 @@
-$baseTime: 150;
-$totalTime: $baseTime * 6 + $baseTime * 4 + $baseTime / 2;
+$baseTime: 400;
+$totalTime: $baseTime * 1 + $baseTime * 5 + $baseTime * 1;
 
 /*
 .l-profile--expanded {
@@ -32,17 +32,21 @@ $totalTime: $baseTime * 6 + $baseTime * 4 + $baseTime / 2;
     margin-right: 1 / 12 * 100%;
 }
 
-.l-profile--shrunk {
-    overflow: hidden;
+.l-profile {
     position: relative;
-    max-width: 0;
-    margin: 0;
     
     //transition-duration: $baseTime * 6  + 0ms, $baseTime * 6 + 0ms, $baseTime * 2 + 0ms;
     // transition-delay: 1ms, 10ms, $baseTime * 60 + 0ms;
-    transition-duration: $baseTime * 1.5 + 0ms, $baseTime * 2 + 0ms, $baseTime * 2 + 0ms;
-    transition-delay: 0s, 0ms, $baseTime * 2 + 0ms;
+    transition-duration: $baseTime * .19 + 0ms, $baseTime * .47 + 0ms, $baseTime * .23 + 0ms;
+    transition-delay: 0s, $baseTime * .19 + 0ms, $baseTime * .62 + 0ms;
+    transition-timing-function: linear;
     transition-property: margin-left, max-width, margin-right;
+}
+
+.l-profile--shrunk {
+    overflow: hidden;
+    max-width: 0;
+    margin: 0;
     img {
         position: absolute;
         top: 0;
@@ -51,22 +55,53 @@ $totalTime: $baseTime * 6 + $baseTime * 4 + $baseTime / 2;
     }
 }
 
+
+.l-profile__bio-wrapper,
+.l-profile__border {
+    transition-duration: $baseTime * 1.05 + 0ms, 500ms, 400ms, 400ms, 0s;
+    transition-timing-function: linear;
+    transition-property: right, bottom, top, left, width;
+}
+
+.l-profile--half-expanded .l-profile__border {
+    border: 5px solid #fff;
+}
+
+.l-profile--expanded .l-profile__border {
+    width: initial;
+    border: 5px solid #ffffff;
+    right: -600px;
+    bottom: -100px;
+    top: -30px;
+    left: -50px;
+}
+.l-profile--expanded .l-profile__bio-wrapper {
+    width: initial;
+    right: -600px;
+}
+
 .l-profile--unshrinking {
     padding: 5px;
     margin-left: 1 / 12 * 100%;
     margin-right: 1 / 12 * 100%;
     max-width: 100%;
-    transition-delay: 0s, 200ms, 250ms, 850ms;
-    transition-duration: 200ms, 50ms, 600ms, 200ms;
+    transition-delay: 0s;
+    transition-duration: 0s;
+    // transition-delay: 0s, $baseTime * 1 + 0ms, $baseTime * 1.25 + 0ms, $baseTime * 4.25 + 0ms;
+    //transition-duration: $baseTime * 1 + 0ms, $baseTime * .25 + 0ms, $baseTime * 11 + 0ms, $baseTime * 1 + 0ms;
+    transition-timing-function: linear;
     transition-property: margin-right, padding, max-width, margin-left;
 }
 
 .c-profile.l-profile--expanded .c-profile__dev, 
-.c-profile.l-profile--half-expanded .c-profile__dev {
+.c-profile.l-profile--half-expanded .c-profile__dev,
+.c-profile.l-profile--shrunk .c-profile__dev, {
     display: block;
 }
 
 .c-profile.l-profile--expanded .c-profile__dev--hover, 
-.c-profile.l-profile--half-expanded .c-profile__dev--hover {
+.c-profile.l-profile--half-expanded .c-profile__dev--hover,
+.c-profile.l-profile--shrunk .c-profile__dev--hover,
+.c-profile.l-profile--shrunk .c-profile__overlay {
     display: none;
 }

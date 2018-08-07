@@ -1884,22 +1884,8 @@ body {
   cursor: crosshair;
   position: relative; }
 
-.l-profile--expanded .l-profile__bio-wrapper {
-  border: 5px solid #ffffff;
-  width: 1000px; }
-
 .l-profile {
   padding: 0 !important; }
-
-.c-profile__border {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 5px solid #fff;
-  z-index: 5;
-  max-width: 274px; }
 
 .c-profile__preview {
   position: relative; }
@@ -1932,20 +1918,26 @@ body {
 .l-profile__bio {
   position: absolute;
   top: 0;
-  left: 280px;
+  left: 300px;
   width: 500px;
-  padding-left: 8%;
-  padding-right: 8%; }
+  padding-top: 30px; }
 
 .l-profile__bio-wrapper {
+  background-color: rgba(200, 100, 100, 0.4);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 11px;
+  bottom: 0; }
+
+.l-profile__border {
   overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
-  width: 274px;
-  transition-duration: 500ms;
-  transition-property: width; }
+  right: 11px; }
 
 .l-profile__proficiencies {
   width: 80%;
@@ -2035,35 +2027,63 @@ body {
 .shrink {
   margin-right: 8.33333%; }
 
+.l-profile {
+  position: relative;
+  transition-duration: 76ms, 188ms, 92ms;
+  transition-delay: 0s, 76ms, 248ms;
+  transition-timing-function: linear;
+  transition-property: margin-left, max-width, margin-right; }
+
 .l-profile--shrunk {
   overflow: hidden;
-  position: relative;
   max-width: 0;
-  margin: 0;
-  transition-duration: 225ms, 300ms, 300ms;
-  transition-delay: 0s, 0ms, 300ms;
-  transition-property: margin-left, max-width, margin-right; }
+  margin: 0; }
   .l-profile--shrunk img {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0; }
 
+.l-profile__bio-wrapper,
+.l-profile__border {
+  transition-duration: 420ms, 500ms, 400ms, 400ms, 0s;
+  transition-timing-function: linear;
+  transition-property: right, bottom, top, left, width; }
+
+.l-profile--half-expanded .l-profile__border {
+  border: 5px solid #fff; }
+
+.l-profile--expanded .l-profile__border {
+  width: initial;
+  border: 5px solid #ffffff;
+  right: -600px;
+  bottom: -100px;
+  top: -30px;
+  left: -50px; }
+
+.l-profile--expanded .l-profile__bio-wrapper {
+  width: initial;
+  right: -600px; }
+
 .l-profile--unshrinking {
   padding: 5px;
   margin-left: 8.33333%;
   margin-right: 8.33333%;
   max-width: 100%;
-  transition-delay: 0s, 200ms, 250ms, 850ms;
-  transition-duration: 200ms, 50ms, 600ms, 200ms;
+  transition-delay: 0s;
+  transition-duration: 0s;
+  transition-timing-function: linear;
   transition-property: margin-right, padding, max-width, margin-left; }
 
 .c-profile.l-profile--expanded .c-profile__dev,
-.c-profile.l-profile--half-expanded .c-profile__dev {
+.c-profile.l-profile--half-expanded .c-profile__dev,
+.c-profile.l-profile--shrunk .c-profile__dev {
   display: block; }
 
 .c-profile.l-profile--expanded .c-profile__dev--hover,
-.c-profile.l-profile--half-expanded .c-profile__dev--hover {
+.c-profile.l-profile--half-expanded .c-profile__dev--hover,
+.c-profile.l-profile--shrunk .c-profile__dev--hover,
+.c-profile.l-profile--shrunk .c-profile__overlay {
   display: none; }
 
 /*--------------------------------------------------------------
