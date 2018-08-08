@@ -1885,7 +1885,10 @@ body {
   position: relative; }
 
 .l-profile {
-  padding: 0 !important; }
+  padding: 0; }
+
+.l-profile:hover .l-profile__border {
+  border: 5px solid #ffffff; }
 
 .c-profile__preview {
   position: relative; }
@@ -1923,7 +1926,6 @@ body {
   padding-top: 30px; }
 
 .l-profile__bio-wrapper {
-  background-color: rgba(200, 100, 100, 0.4);
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -1999,28 +2001,6 @@ body {
 .l-profile--half-expanded .c-profile__overlay {
   display: none; }
 
-/*
-.l-profile--expanded {
-    border: 5px solid #ffffff;
-    padding: 0;
-    max-width: 100%;
-    flex: 1;
-    overflow: hidden;
-
-    .c-profile__bio {
-        display: block;
-    }
-}
-
-.l-profile--half-expanded {
-    transition-duration: 50ms;
-    transition-property: padding-bottom;
-
-    border: 5px solid #ffffff;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-}*/
 .l-profile--spacer {
   flex: 1; }
 
@@ -2029,8 +2009,8 @@ body {
 
 .l-profile {
   position: relative;
-  transition-duration: 76ms, 188ms, 92ms;
-  transition-delay: 0s, 76ms, 248ms;
+  transition-duration: 95ms, 235ms, 115ms;
+  transition-delay: 0s, 95ms, 310ms;
   transition-timing-function: linear;
   transition-property: margin-left, max-width, margin-right; }
 
@@ -2044,9 +2024,16 @@ body {
     right: 0;
     bottom: 0; }
 
-.l-profile__bio-wrapper,
+.l-profile--contracting .l-profile__bio-wrapper {
+  transition-duration: 500ms, 500ms, 400ms, 400ms, 0s; }
+
+.l-profile__bio-wrapper {
+  transition-duration: 550ms, 500ms, 400ms, 400ms, 0s;
+  transition-timing-function: linear;
+  transition-property: right, bottom, top, left, width; }
+
 .l-profile__border {
-  transition-duration: 420ms, 500ms, 400ms, 400ms, 0s;
+  transition-duration: 525ms, 500ms, 400ms, 400ms, 0s;
   transition-timing-function: linear;
   transition-property: right, bottom, top, left, width; }
 
@@ -2065,25 +2052,27 @@ body {
   width: initial;
   right: -600px; }
 
+.l-profile--contracting .l-profile__border {
+  border: 5px solid #ffffff; }
+
 .l-profile--unshrinking {
-  padding: 5px;
   margin-left: 8.33333%;
   margin-right: 8.33333%;
-  max-width: 100%;
-  transition-delay: 0s;
-  transition-duration: 0s;
-  transition-timing-function: linear;
-  transition-property: margin-right, padding, max-width, margin-left; }
+  max-width: 25%;
+  transition-duration: 95ms, 250ms, 115ms;
+  transition-delay: 350ms, 190ms, 0s;
+  transition-property: margin-left, max-width, margin-right; }
 
 .c-profile.l-profile--expanded .c-profile__dev,
-.c-profile.l-profile--half-expanded .c-profile__dev,
+.c-profile.l-profile--contracting .c-profile__dev,
 .c-profile.l-profile--shrunk .c-profile__dev {
   display: block; }
 
 .c-profile.l-profile--expanded .c-profile__dev--hover,
-.c-profile.l-profile--half-expanded .c-profile__dev--hover,
+.c-profile.l-profile--contracting .c-profile__dev--hover,
 .c-profile.l-profile--shrunk .c-profile__dev--hover,
-.c-profile.l-profile--shrunk .c-profile__overlay {
+.c-profile.l-profile--shrunk .c-profile__overlay,
+.l-profile--contracting .c-profile__overlay {
   display: none; }
 
 /*--------------------------------------------------------------

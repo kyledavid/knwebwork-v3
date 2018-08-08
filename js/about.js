@@ -21,28 +21,22 @@
     var closeExpanded = function(e) {
         e.stopPropagation()
         $('.l-profile--shrunk').addClass('l-profile--unshrinking')
+        $('.l-profile--expanded').addClass('l-profile--contracting')
         $('.l-profile--expanded').removeClass('l-profile--expanded')
-        setTimeout(cleanUpExpansion, 1050)
+        setTimeout(cleanUpExpansion, 800)
     }
 
     var cleanUpExpansion = function() {
-        $('.l-profile__bio-wrapper').addClass('l-profile__bio-wrapper--contracting')
-        $('.l-profile--expanded').removeClass('l-profile--expanded')
-        $('.l-profile--unshrinking').removeClass('l-profile--unshrinking')
         $('.l-profile--shrunk').removeClass('l-profile--shrunk')
-        $('.l-profile--half-expanded').css({paddingBottom: 0})
-        setTimeout(function(){
-            $('.l-profile__bio-wrapper--contracting').removeClass('l-profile__bio-wrapper--contracting')
-            $('.l-profile--half-expanded').removeClass('l-profile--half-expanded')
-        }, 200)
+        $('.l-profile--unshrinking').removeClass('l-profile--unshrinking')
+        $('.l-profile--contracting').removeClass('l-profile--contracting')
     }
 
     var socialHeight = $('.c-profile__social').height() + 40
     
     $(document).ready(function() {
         $('.expand').click(function() {
-            expandHalf(socialHeight)
-            setTimeout(expandFull, 100)
+            expandFull()
         })
         $('.c-profile__close').click(function() {
             closeExpanded(event)

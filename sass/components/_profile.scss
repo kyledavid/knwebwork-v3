@@ -8,15 +8,13 @@
 }
 
 .l-profile {
-    padding: 0 !important;
-}
-
-.l-profile.working {
-
+    padding: 0;
 }
 
 .l-profile:hover {
-    //padding: 0;
+    .l-profile__border {
+        border: 5px solid #ffffff;
+    }
 }
 
 .c-profile__preview {
