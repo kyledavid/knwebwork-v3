@@ -27,7 +27,7 @@
                     <div class="c-profile__social l-profile__social"></div>
                     <div class="c-profile__bio l-profile__bio">
                         <h2 class="c-profile__bio--name">kyle steinle</h2>
-                        <div>
+                        <div class="c-profile__bio-full l-profile__bio-full">
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam eraat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum 
                         </div>
                         <div class="c-profile__proficiencies l-profile__proficiencies"></div>

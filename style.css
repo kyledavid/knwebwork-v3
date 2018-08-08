@@ -1933,6 +1933,30 @@ body {
   right: 11px;
   bottom: 0; }
 
+.c-profile__bio-name {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 600; }
+
+.l-profile__bio-name {
+  margin-bottom: 0; }
+
+.c-profile__bio-title {
+  font-size: 0.875em;
+  font-weight: 400; }
+
+.l-profile__bio-title {
+  margin-top: 12px; }
+
+.c-profile__bio-full {
+  font-size: 0.9375em;
+  line-height: 1.2em; }
+
+.c-profile__proficiencies {
+  font-size: 1.125em;
+  font-weight: 600;
+  background-color: initial; }
+
 .l-profile__border {
   overflow: hidden;
   position: absolute;
@@ -1943,11 +1967,21 @@ body {
 
 .l-profile__proficiencies {
   width: 80%;
-  height: 90px;
   margin: auto;
-  margin-top: 2em;
-  background-color: #555;
-  content: " "; }
+  margin-left: 0;
+  margin-top: 2em; }
+
+.c-profile__proficiency-1 {
+  color: #71f7ff; }
+
+.c-profile__proficiency-2 {
+  color: #f29253; }
+
+.c-profile__proficiency-3 {
+  color: #289ea4; }
+
+.c-profile__proficiency-4 {
+  color: #a45018; }
 
 .l-profile__close {
   position: absolute;

@@ -30,11 +30,17 @@
                 <div class="l-profile__border"></div>
                 <div class="c-profile__bio-wrapper l-profile__bio-wrapper">
                     <div class="c-profile__bio l-profile__bio">
-                        <h2 class="c-profile__bio--name">kyle steinle</h2>
-                        <div>
+                        <h2 class="c-profile__bio-name">kyle steinle</h2>
+                        <h5 class="c-profile__bio-title">(frontend developer)</h5>
+                        <div class="c-profile__bio-full l-profile__bio-full">
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam eraat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum 
                         </div>
-                        <div class="c-profile__proficiencies l-profile__proficiencies"></div>
+                        <div class="c-profile__proficiencies l-profile__proficiencies d-flex justify-content-between">
+                            <span class="c-profile__proficiency-1">SASS</span>
+                            <span class="c-profile__proficiency-2">Javascript</span>
+                            <span class="c-profile__proficiency-3">React</span>
+                            <span class="c-profile__proficiency-4">Adobe CC</span>
+                        </div>
                         <button class="c-profile__close l-profile__close">Close Window</button>              
                     </div>
                 </div>
