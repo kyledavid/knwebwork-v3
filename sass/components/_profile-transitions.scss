@@ -44,12 +44,14 @@ $totalTime: $baseTime * 1 + $baseTime * 5 + $baseTime * 1;
         bottom: 0;
     }
 
-    .l-profile__social {
+    .l-profile__social,
+    .l-profile__border {
         display: none !important;
     }
 }
 
 .l-profile--contracting {
+    cursor: initial;
     .l-profile__bio-wrapper {
         transition-duration: $baseTime * 1 + 0ms, 500ms, 400ms, 400ms, 0s;
     }

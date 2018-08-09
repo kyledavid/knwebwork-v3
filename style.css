@@ -2085,11 +2085,14 @@ body {
     top: 0;
     right: 0;
     bottom: 0; }
-  .l-profile--shrunk .l-profile__social {
+  .l-profile--shrunk .l-profile__social,
+  .l-profile--shrunk .l-profile__border {
     display: none !important; }
 
-.l-profile--contracting .l-profile__bio-wrapper {
-  transition-duration: 500ms, 500ms, 400ms, 400ms, 0s; }
+.l-profile--contracting {
+  cursor: initial; }
+  .l-profile--contracting .l-profile__bio-wrapper {
+    transition-duration: 500ms, 500ms, 400ms, 400ms, 0s; }
 
 .l-profile__bio-wrapper {
   transition-duration: 550ms, 500ms, 400ms, 400ms, 0s;

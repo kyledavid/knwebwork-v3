@@ -7,8 +7,12 @@
     }
 
     var expandFull = function(orientation='left', orientation2='right') {
-        shrinkColumn(orientation2)
-        expandColumn(orientation)
+        var contracting = $('.l-profile--contracting')
+
+        if (!contracting.length) {
+            shrinkColumn(orientation2)
+            expandColumn(orientation)
+        }
     }
 
     var shrinkColumn = function(orientation='right') {
@@ -19,6 +23,10 @@
     var expandColumn = function(orientation='left') {
         var cName = '.c-profile--' + orientation
         $(cName).addClass('l-profile--expanded')
+    }
+
+    var stopProp = function(e) {
+        e.stopPropagation()
     }
 
     var closeExpanded = function(e) {
