@@ -9,7 +9,11 @@ $totalTime: $baseTime * 1 + $baseTime * 5 + $baseTime * 1;
 
 }
 
-.shrink {
+.l-profile--expanded {
+    cursor: initial;
+}
+
+.c-profile--right {
     margin-right: 1 / 12 * 100%;
 }
 
@@ -31,6 +35,10 @@ $totalTime: $baseTime * 1 + $baseTime * 5 + $baseTime * 1;
         top: 0;
         right: 0;
         bottom: 0;
+    }
+
+    .l-profile__social {
+        display: none !important;
     }
 }
 
@@ -59,7 +67,9 @@ $totalTime: $baseTime * 1 + $baseTime * 5 + $baseTime * 1;
 
 .l-profile--expanded .l-profile__border {
     width: initial;
+    
     border: 5px solid #ffffff;
+    
     right: -600px;
     bottom: -100px;
     top: -30px;

@@ -1,10 +1,10 @@
+.l-about__row {
+    margin-top: 1em;
+}
+
 .c-profile {
     cursor: crosshair;
     position: relative;
-}
-
-.c-profile:hover {
-    //border: 5px solid #ffffff;
 }
 
 .l-profile {
@@ -17,12 +17,9 @@
     }
 }
 
-.c-profile__preview {
-    position: relative;
-}
-
 .l-profile__preview {
     max-width: 274px;
+    position: relative;
 }
 
 .c-profile__dev {
@@ -43,13 +40,39 @@
     display: block;
 }
 
-
 .c-profile__spacer {
     flex: 1;
     content: " ";
 }
 
-.shrink {
+.l-profile__social {
+    position: absolute;
+
+    bottom: -50px;
+
+    height: 2em;
+    line-height: 2em;
+    max-width: 274px;
+    width: 99%;
+}
+
+.c-profile__social-github {
+    color: $color__prof-4;
+}
+
+.c-profile__social-instagram {
+    color: $color__prof-3;
+}
+
+.c-profile__social-linkedin {
+    color: $color__prof-2;
+}
+
+.c-profile__social-twitter {
+    color: $color__prof-1;
+}
+
+.c-profile--right {
 
     .l-profile__preview {
         margin-right: 0;

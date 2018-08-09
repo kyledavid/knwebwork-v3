@@ -1,8 +1,8 @@
 (function($){
     var expandHalf = function(height) {
         var formattedHeight = height + "px"
-        $('.expand').addClass('l-profile--half-expanded')
-        $('.expand').css({paddingBottom: height})
+        $('.c-profile--left').addClass('l-profile--half-expanded')
+        $('.c-profile--left').css({paddingBottom: height})
     }
 
     var expandFull = function() {
@@ -11,11 +11,11 @@
     }
 
     var shrinkColumn = function() {
-        $('.shrink').addClass('l-profile--shrunk')
+        $('.c-profile--right').addClass('l-profile--shrunk')
     }
 
     var expandColumn = function() {
-        $('.expand').addClass('l-profile--expanded')
+        $('.c-profile--left').addClass('l-profile--expanded')
     }
 
     var closeExpanded = function(e) {
@@ -35,7 +35,7 @@
     var socialHeight = $('.c-profile__social').height() + 40
     
     $(document).ready(function() {
-        $('.expand').click(function() {
+        $('.c-profile--left').click(function() {
             expandFull()
         })
         $('.c-profile__close').click(function() {
