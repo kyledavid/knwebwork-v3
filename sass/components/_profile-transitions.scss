@@ -26,6 +26,13 @@ $totalTime: $baseTime * 1 + $baseTime * 5 + $baseTime * 1;
     transition-property: margin-left, max-width, margin-right;
 }
 
+.l-profile--right {
+    transition-duration: $baseTime * .19 + 0ms, $baseTime * .47 + 0ms, $baseTime * .23 + 0ms;
+    transition-delay: 0s, $baseTime * .19 + 0ms, $baseTime * .62 + 0ms;
+    transition-timing-function: linear;
+    transition-property: margin-right, max-width, margin-left;
+}
+
 .l-profile--shrunk {
     overflow: hidden;
     max-width: 0;

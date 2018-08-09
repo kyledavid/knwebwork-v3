@@ -1,21 +1,24 @@
 (function($){
-    var expandHalf = function(height) {
+    var expandHalf = function(height, orientation="left") {
         var formattedHeight = height + "px"
-        $('.c-profile--left').addClass('l-profile--half-expanded')
-        $('.c-profile--left').css({paddingBottom: height})
+        var cName = '.c-profile--' + orientation
+        $(cName).addClass('l-profile--half-expanded')
+        $(cName).css({paddingBottom: height})
     }
 
-    var expandFull = function() {
-        shrinkColumn()
-        expandColumn()
+    var expandFull = function(orientation='left', orientation2='right') {
+        shrinkColumn(orientation2)
+        expandColumn(orientation)
     }
 
-    var shrinkColumn = function() {
-        $('.c-profile--right').addClass('l-profile--shrunk')
+    var shrinkColumn = function(orientation='right') {
+        var cName = '.c-profile--' + orientation
+        $(cName).addClass('l-profile--shrunk')
     }
 
-    var expandColumn = function() {
-        $('.c-profile--left').addClass('l-profile--expanded')
+    var expandColumn = function(orientation='left') {
+        var cName = '.c-profile--' + orientation
+        $(cName).addClass('l-profile--expanded')
     }
 
     var closeExpanded = function(e) {
@@ -37,6 +40,9 @@
     $(document).ready(function() {
         $('.c-profile--left').click(function() {
             expandFull()
+        })
+        $('.c-profile--right').click(function() {
+            expandFull('right', 'left')
         })
         $('.c-profile__close').click(function() {
             closeExpanded(event)
