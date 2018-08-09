@@ -2070,11 +2070,11 @@ body {
   transition-timing-function: linear;
   transition-property: margin-left, max-width, margin-right; }
 
-.l-profile--right {
+.l-profile--shrunk.c-profile--right {
   transition-duration: 95ms, 235ms, 115ms;
   transition-delay: 0s, 95ms, 310ms;
   transition-timing-function: linear;
-  transition-property: margin-right, max-width, margin-left; }
+  transition-property: margin-left, max-width, margin-right; }
 
 .l-profile--shrunk {
   overflow: hidden;
@@ -2119,11 +2119,11 @@ body {
 .l-profile--contracting .l-profile__border {
   border: 5px solid #ffffff; }
 
-.l-profile--unshrinking {
+.c-profile--right.l-profile--unshrinking {
   margin-left: 8.33333%;
   margin-right: 8.33333%;
   max-width: 25%;
-  transition-duration: 95ms, 250ms, 115ms;
+  transition-duration: 95ms, 250ms, 95ms;
   transition-delay: 350ms, 190ms, 0s;
   transition-property: margin-left, max-width, margin-right; }
 
@@ -2191,7 +2191,7 @@ body {
   margin-right: 0;
   max-width: 25%;
   transition-duration: 95ms, 250ms;
-  transition-delay: 0s, 200ms, 0s;
+  transition-delay: 0s, 180ms, 0s;
   transition-property: margin-left, max-width; }
 
 /*--------------------------------------------------------------

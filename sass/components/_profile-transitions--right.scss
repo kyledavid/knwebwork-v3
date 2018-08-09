@@ -74,6 +74,6 @@ $totalTime: $baseTime * 1 + $baseTime * 5 + $baseTime * 1;
     margin-right: 0;
     max-width: 25%;
     transition-duration: $baseTime * .19 + 0ms, $baseTime * .50 + 0ms;
-    transition-delay: 0s, $baseTime * .4 + 0ms, 0s;
+    transition-delay: 0s, $baseTime * .36 + 0ms, 0s;
     transition-property: margin-left, max-width;
 }
