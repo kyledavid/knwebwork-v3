@@ -2065,14 +2065,14 @@ body {
 
 .l-profile {
   position: relative;
-  transition-duration: 95ms, 235ms, 115ms;
-  transition-delay: 0s, 95ms, 310ms;
+  transition-duration: 950ms, 2350ms, 1150ms;
+  transition-delay: 0s, 950ms, 3100ms;
   transition-timing-function: linear;
   transition-property: margin-left, max-width, margin-right; }
 
 .l-profile--right {
-  transition-duration: 95ms, 235ms, 115ms;
-  transition-delay: 0s, 95ms, 310ms;
+  transition-duration: 950ms, 2350ms, 1150ms;
+  transition-delay: 0s, 950ms, 3100ms;
   transition-timing-function: linear;
   transition-property: margin-right, max-width, margin-left; }
 
@@ -2089,15 +2089,15 @@ body {
     display: none !important; }
 
 .l-profile--contracting .l-profile__bio-wrapper {
-  transition-duration: 500ms, 500ms, 400ms, 400ms, 0s; }
+  transition-duration: 5000ms, 500ms, 400ms, 400ms, 0s; }
 
 .l-profile__bio-wrapper {
-  transition-duration: 550ms, 500ms, 400ms, 400ms, 0s;
+  transition-duration: 5500ms, 500ms, 400ms, 400ms, 0s;
   transition-timing-function: linear;
   transition-property: right, bottom, top, left, width; }
 
 .l-profile__border {
-  transition-duration: 525ms, 500ms, 400ms, 400ms, 0s;
+  transition-duration: 5250ms, 500ms, 400ms, 400ms, 0s;
   transition-timing-function: linear;
   transition-property: right, bottom, top, left, width; }
 
@@ -2123,8 +2123,8 @@ body {
   margin-left: 8.33333%;
   margin-right: 8.33333%;
   max-width: 25%;
-  transition-duration: 95ms, 250ms, 115ms;
-  transition-delay: 350ms, 190ms, 0s;
+  transition-duration: 950ms, 2500ms, 1150ms;
+  transition-delay: 3500ms, 1900ms, 0s;
   transition-property: margin-left, max-width, margin-right; }
 
 .c-profile.l-profile--expanded .c-profile__dev,
@@ -2139,27 +2139,40 @@ body {
 .l-profile--contracting .c-profile__overlay {
   display: none; }
 
-.l-profile--right {
-  transition-duration: 95ms, 235ms, 115ms;
-  transition-delay: 0s, 95ms, 310ms;
+.c-profile--left {
+  position: relative;
+  transition-duration: 950ms, 2350ms;
+  transition-delay: 0s, 950ms;
+  transition-timing-function: linear;
+  transition-property: max-width, margin-left; }
+
+.c-profile--right {
+  transition-duration: 950ms, 2350ms, 1150ms;
+  transition-delay: 0s, 950ms, 3100ms;
   transition-timing-function: linear;
   transition-property: margin-right, max-width, margin-left; }
-  .l-profile--right .l-profile__bio-wrapper {
-    transition-duration: 550ms, 500ms, 400ms, 400ms, 0s;
+  .c-profile--right .l-profile__bio-wrapper {
+    transition-duration: 5500ms, 500ms, 400ms, 400ms, 0s;
     transition-timing-function: linear;
     transition-property: left, bottom, top, right, width; }
-  .l-profile--right .l-profile__border {
-    transition-duration: 525ms, 500ms, 400ms, 400ms, 0s;
+  .c-profile--right .l-profile__border {
+    right: 0;
+    transition-duration: 5250ms, 500ms, 400ms, 400ms, 0s;
     transition-timing-function: linear;
     transition-property: left, bottom, top, right, width; }
+  .c-profile--right .l-profile__bio-wrapper {
+    right: 0; }
+  .c-profile--right .l-profile__bio {
+    right: 300px;
+    left: initial; }
 
-.l-profile--left .l-profile--shrunk img {
+.c-profile--left .l-profile--shrunk img {
   left: 0; }
 
 .l-profile--contracting .l-profile__bio-wrapper {
-  transition-duration: 500ms, 500ms, 400ms, 400ms, 0s; }
+  transition-duration: 5000ms, 500ms, 400ms, 400ms, 0s; }
 
-.l-profile--right.l-profile--expanded .l-profile__border {
+.c-profile--right.l-profile--expanded .l-profile__border {
   width: initial;
   border: 5px solid #ffffff;
   right: -50px;
@@ -2167,16 +2180,17 @@ body {
   top: -30px;
   left: -600px; }
 
-.l-profile--right.l-profile--expanded .l-profile__bio-wrapper {
+.c-profile--right.l-profile--expanded .l-profile__bio-wrapper {
   width: initial;
-  left: -600px; }
+  left: -600px;
+  right: 0; }
 
-.l-profile--left.l-profile--unshrinking {
+.c-profile--left.l-profile--unshrinking {
   margin-left: 8.33333%;
   margin-right: 8.33333%;
   max-width: 25%;
-  transition-duration: 95ms, 250ms, 115ms;
-  transition-delay: 350ms, 190ms, 0s;
+  transition-duration: 950ms, 2500ms, 1150ms;
+  transition-delay: 3500ms, 1900ms, 0s;
   transition-property: margin-right, max-width, margin-left; }
 
 /*--------------------------------------------------------------
