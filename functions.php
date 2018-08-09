@@ -132,7 +132,7 @@ function kn_webwork_3_0_scripts() {
 	}
 
 	if ( is_page('about') ) {
-		wp_enqueue_script( 'about-scripts', get_template_directory_uri() . '/js/about.js', array('jquery'), null, true);
+		wp_enqueue_script( 'about-scripts', get_template_directory_uri() . '/js/about.js', array('jquery'), filemtime(get_stylesheet_directory() . '/js/about.js'), true);
 	}
 
 	if ( is_archive() ) {

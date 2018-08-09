@@ -1,11 +1,11 @@
-$baseTime: 5000;
+$baseTime: 500;
 $totalTime: $baseTime * 1 + $baseTime * 5 + $baseTime * 1;
 
 .c-profile--left {
     position: relative;
 
-    transition-duration: $baseTime * .19 + 0ms, $baseTime * .47 + 0ms;
-    transition-delay: 0s, $baseTime * .19 + 0ms;
+    transition-duration: $baseTime * .47 + 0ms, $baseTime * .19 + 0ms;
+    transition-delay: $baseTime * .19 + 0ms, $baseTime * .66 + 0ms;
     transition-timing-function: linear;
     transition-property:  max-width, margin-left;
 }
@@ -39,14 +39,13 @@ $totalTime: $baseTime * 1 + $baseTime * 5 + $baseTime * 1;
     }
 }
 
-.c-profile--left {
-    .l-profile--shrunk {
-        img {
-            left: 0;
-        }
+.c-profile--left.l-profile--shrunk {
+    img {
+        left: 0;
+        right: initial;
     }
-
 }
+
 
 .l-profile--contracting {
     .l-profile__bio-wrapper {
@@ -71,12 +70,10 @@ $totalTime: $baseTime * 1 + $baseTime * 5 + $baseTime * 1;
 }
 
 .c-profile--left.l-profile--unshrinking {
-    margin-left: 8.33333%;
-    margin-right: 8.33333%;
+    margin-left: 25%;
+    margin-right: 0;
     max-width: 25%;
-    transition-duration: $baseTime * .19 + 0ms, $baseTime * .50 + 0ms, $baseTime * .23 + 0ms;
-    transition-delay: $baseTime * .70 + 0ms, $baseTime * .38 + 0ms, 0s;
-    transition-property: margin-right, max-width, margin-left;
+    transition-duration: $baseTime * .19 + 0ms, $baseTime * .50 + 0ms;
+    transition-delay: 0s, $baseTime * .4 + 0ms, 0s;
+    transition-property: margin-left, max-width;
 }
-
-

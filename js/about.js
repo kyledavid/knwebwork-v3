@@ -26,7 +26,7 @@
         $('.l-profile--shrunk').addClass('l-profile--unshrinking')
         $('.l-profile--expanded').addClass('l-profile--contracting')
         $('.l-profile--expanded').removeClass('l-profile--expanded')
-        setTimeout(cleanUpExpansion, 800)
+        setTimeout(cleanUpExpansion, 500)
     }
 
     var cleanUpExpansion = function() {
