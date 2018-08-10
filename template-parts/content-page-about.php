@@ -14,8 +14,8 @@
         <header class="entry-header container">
             <h1 class="o-page-header o-page-header--team l-page-header l-page-header--team offset-sm-3">our team</h1>
         </header><!-- .entry-header -->
-        <div class="row d-flex flex-nowrap l-about__row">
-            <div class="c-profile l-profile working offset-sm-3 col-sm-3 c-profile--left">
+        <div class="row d-flex flex-xl-nowrap l-about__row">
+            <div class="c-profile l-profile working offset-xl-3 col-xl-3 offset-lg-1 col-lg-10 col-sm-12 c-profile--left">
                 <div class="c-profile__preview l-profile__preview">
                     <div class="c-profile__social l-profile__social d-flex justify-content-between">
                         <a href="google.com"><span class="c-profile__social-github fab fa-github-alt"></span></a>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="c-profile__bio-wrapper l-profile__bio-wrapper">
                         <div class="c-profile__bio l-profile__bio">
-                            <h2 class="c-profile__bio-name">kyle steinle</h2>
+                            <h2 class="c-profile__bio-name l-profile__bio-name">kyle steinle</h2>
                             <h5 class="c-profile__bio-title">(frontend developer)</h5>
                             <div class="c-profile__bio-full l-profile__bio-full">
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam eraat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum 
@@ -54,7 +54,7 @@
 
             <div class="l-profile--spacer"></div>
 
-            <div class="c-profile l-profile offset-sm-1 col-sm-3 c-profile--right">
+            <div class="c-profile l-profile offset-xl-1 col-xl-3 offset-lg-1 col-lg-10 col-sm-12 c-profile--right">
                 <div class="c-profile__preview l-profile__preview">
                     <div class="c-profile__social l-profile__social d-flex justify-content-between">
                         <a href="google.com"><span class="c-profile__social-github fab fa-github-alt"></span></a>
@@ -71,7 +71,7 @@
                     <div class="l-profile__border"></div>
                     <div class="c-profile__bio-wrapper l-profile__bio-wrapper">
                         <div class="c-profile__bio l-profile__bio">
-                            <h2 class="c-profile__bio-name">kyle steinle</h2>
+                            <h2 class="c-profile__bio-name l-profile__bio-name">kyle steinle</h2>
                             <h5 class="c-profile__bio-title">(frontend developer)</h5>
                             <div class="c-profile__bio-full l-profile__bio-full">
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam eraat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum 

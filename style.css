@@ -1474,7 +1474,8 @@ body {
 body {
   background-image: url("./img/mountain-bg-cropped-100.jpg");
   background-position: top left 46%;
-  position: relative; }
+  position: relative;
+  min-height: 100vh; }
   body::after {
     content: " ";
     position: absolute;
@@ -1920,8 +1921,8 @@ body {
 .l-profile__social {
   position: absolute;
   bottom: -50px;
-  height: 2em;
-  line-height: 2em;
+  height: 32px;
+  line-height: 32px;
   max-width: 274px;
   width: 99%; }
 
@@ -2031,6 +2032,48 @@ body {
   position: absolute;
   top: 20px;
   right: 40px; }
+
+.l-profile__preview {
+  position: initial; }
+
+.l-profile__border {
+  display: none; }
+
+.c-profile__overlay {
+  display: none; }
+
+.c-profile__close {
+  display: none; }
+
+.l-profile__spacer {
+  display: none; }
+
+.l-profile__bio-wrapper {
+  right: 0; }
+
+.l-profile__bio {
+  left: 0;
+  width: 100%;
+  padding-left: 305px;
+  padding-top: 0; }
+
+.l-profile__bio-name {
+  margin-top: 0; }
+
+.c-profile {
+  cursor: initial; }
+
+.c-profile:hover .c-profile__dev {
+  display: block; }
+
+.c-profile:hover .c-profile__dev--hover {
+  display: none; }
+
+.c-profile:nth-of-type(3) {
+  margin-top: 70px; }
+
+.c-profile__bio-full {
+  line-height: 1.5em; }
 
 .c-profile__overlay {
   background-color: rgba(17, 17, 22, 0.9);

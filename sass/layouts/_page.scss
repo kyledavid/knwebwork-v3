@@ -2,6 +2,7 @@ body {
     background-image: url('./img/mountain-bg-cropped-100.jpg');
     background-position: top left 46%;
     position: relative;
+    min-height: 100vh;
     
     &::after {
         content: " ";
