@@ -1941,6 +1941,21 @@ body {
   margin-right: 0;
   margin-left: auto; }
 
+.c-profile__social {
+  cursor: initial;
+  z-index: 4; }
+
+.c-profile__social:hover ~ .c-profile__overlay,
+.c-profile__social:hover ~ .c-profile__dev--hover,
+.c-profile__social:hover ~ .l-profile__border {
+  display: none; }
+
+.l-profile--expanded .c-profile__social:hover ~ .l-profile__border {
+  display: block; }
+
+.c-profile__social:hover ~ .c-profile__dev {
+  display: block; }
+
 .l-profile__bio {
   position: absolute;
   top: 0;
@@ -1954,7 +1969,8 @@ body {
   top: 0;
   left: 0;
   right: 11px;
-  bottom: 0; }
+  bottom: 0;
+  z-index: 3; }
 
 .c-profile__bio-name {
   font-size: 36px;
@@ -2008,7 +2024,8 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
-  right: 11px; }
+  right: 0;
+  z-index: 2; }
 
 .l-profile__close {
   position: absolute;

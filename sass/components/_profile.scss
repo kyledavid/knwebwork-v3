@@ -80,3 +80,22 @@
     }
     
 }
+
+.c-profile__social {
+    cursor: initial;
+    z-index: 4;
+}
+
+.c-profile__social:hover ~ .c-profile__overlay,
+.c-profile__social:hover ~ .c-profile__dev--hover,
+.c-profile__social:hover ~ .l-profile__border {
+    display: none;
+}
+
+.l-profile--expanded .c-profile__social:hover ~ .l-profile__border {
+    display: block;
+}
+
+.c-profile__social:hover ~ .c-profile__dev {
+    display: block;
+}

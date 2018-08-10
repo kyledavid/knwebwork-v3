@@ -13,6 +13,7 @@
     left: 0;
     right: 11px;
     bottom: 0;
+    z-index: 3;
 }
 
 .c-profile__bio-name {
@@ -79,7 +80,8 @@
     top: 0;
     left: 0;
     bottom: 0;
-    right: 11px;
+    right: 0;
+    z-index: 2;
 }
 
 .l-profile__close {

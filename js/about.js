@@ -46,6 +46,9 @@
     var socialHeight = $('.c-profile__social').height() + 40
     
     $(document).ready(function() {
+        $('.c-profile__social').click(function() {
+            stopProp(event)
+        })
         $('.c-profile--left').click(function() {
             expandFull()
         })
