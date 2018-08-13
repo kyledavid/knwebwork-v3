@@ -90,7 +90,7 @@
     right: 40px;
 }
 
-@include media-breakpoint-down(xl) {
+@include media-breakpoint-down(lg) {
     .l-profile__preview {
         position: initial;
     }

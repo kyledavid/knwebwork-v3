@@ -1498,6 +1498,17 @@ body {
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
+.l-about .page {
+  padding-bottom: 100px; }
+
+@media (max-width: 1199.98px) {
+  .l-about .l-site-footer__site-info {
+    display: inline-block;
+    position: initial;
+    bottom: unset;
+    transform-origin: unset;
+    transform: unset; } }
+
 .l-site-footer {
   position: absolute;
   bottom: -4em;
@@ -1770,7 +1781,7 @@ body {
   .c-main-nav__menu-toggle {
     border: 0;
     background-color: rgba(255, 255, 255, 0);
-    background-image: url("../knww-v3.0/img/1x/burgers.png");
+    background-image: url("../kn-webwork-3.0/img/1x/burgers.png");
     position: absolute;
     right: 5%;
     top: 5%;
@@ -1778,7 +1789,7 @@ body {
     width: 45px;
     height: 23px; }
   .c-main-nav__menu-toggle--clicked {
-    background-image: url("../knww-v3.0/img/1x/ex.png");
+    background-image: url("../kn-webwork-3.0/img/1x/ex.png");
     height: 33px;
     width: 33px; } }
 
@@ -2033,47 +2044,36 @@ body {
   top: 20px;
   right: 40px; }
 
-.l-profile__preview {
-  position: initial; }
-
-.l-profile__border {
-  display: none; }
-
-.c-profile__overlay {
-  display: none; }
-
-.c-profile__close {
-  display: none; }
-
-.l-profile__spacer {
-  display: none; }
-
-.l-profile__bio-wrapper {
-  right: 0; }
-
-.l-profile__bio {
-  left: 0;
-  width: 100%;
-  padding-left: 305px;
-  padding-top: 0; }
-
-.l-profile__bio-name {
-  margin-top: 0; }
-
-.c-profile {
-  cursor: initial; }
-
-.c-profile:hover .c-profile__dev {
-  display: block; }
-
-.c-profile:hover .c-profile__dev--hover {
-  display: none; }
-
-.c-profile:nth-of-type(3) {
-  margin-top: 70px; }
-
-.c-profile__bio-full {
-  line-height: 1.5em; }
+@media (max-width: 1199.98px) {
+  .l-profile__preview {
+    position: initial; }
+  .l-profile__border {
+    display: none; }
+  .c-profile__overlay {
+    display: none; }
+  .c-profile__close {
+    display: none; }
+  .l-profile__spacer {
+    display: none; }
+  .l-profile__bio-wrapper {
+    right: 0; }
+  .l-profile__bio {
+    left: 0;
+    width: 100%;
+    padding-left: 305px;
+    padding-top: 0; }
+  .l-profile__bio-name {
+    margin-top: 0; }
+  .c-profile {
+    cursor: initial; }
+  .c-profile:hover .c-profile__dev {
+    display: block; }
+  .c-profile:hover .c-profile__dev--hover {
+    display: none; }
+  .c-profile:nth-of-type(3) {
+    margin-top: 70px; }
+  .c-profile__bio-full {
+    line-height: 1.5em; } }
 
 .c-profile__overlay {
   background-color: rgba(17, 17, 22, 0.9);

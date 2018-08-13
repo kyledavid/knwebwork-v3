@@ -8,6 +8,14 @@
  *
  * @package KN_Webwork_3.0
  */
+$classes = '';
+
+if ( is_page('about') ) {
+	$classes = array(
+	    'c-about',
+	    'l-about',
+	    );
+}
 
 ?>
 <!doctype html>
@@ -29,7 +37,7 @@
 	</script>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class($classes); ?>>
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header">
