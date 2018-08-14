@@ -26,6 +26,10 @@
     margin-bottom: 0;
 }
 
+.c-profile__mobile-name {
+    display: none;
+}
+
 .c-profile__bio-title {
     font-size: $font-size__14;
     font-weight: 400;
@@ -137,5 +141,46 @@
 
     .c-profile__bio-full {
         line-height: 1.5em;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .l-profile__bio {
+        position: relative;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .l-profile__preview {
+        margin-right: 0 !important;
+        max-width: initial;
+    }
+
+    .c-profile__dev {
+        max-width: 100%;
+    }
+
+    .l-profile__proficiencies {
+        display: none !important;
+    }
+
+    .l-profile__social {
+        max-width: 100%;
+    }
+
+    .c-profile__mobile-name {
+        display: block;
+
+        font-size: 36px;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    .c-profile__bio-name {
+        display: none;
+    }
+
+    .l-profile__bio-wrapper {
+        position: relative;
     }
 }

@@ -25,6 +25,7 @@
                         <a href=""><span class="c-profile__social-twitter fab fa-twitter"></span></a>
                     </div>
                     <div class="l-profile__border"></div>
+                    <h2 class="c-profile__mobile-name l-profile__mobile-name">kyle steinle</h2>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/kyle-steinle-cutout-4.jpg" class="c-profile__dev--hover" alt="Las Vegas Developer Kyle Steinle">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/kyle-steinle-developer.jpg" class="c-profile__dev" alt="Las Vegas Developer Kyle Steinle">
                     <div class="c-profile__overlay l-profile__overlay">
