@@ -12,7 +12,7 @@
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="container">
-        <header class="entry-header container">
+        <header class="entry-header">
             <h1 class="o-page-header o-page-header--team l-page-header l-page-header--team offset-sm-3">our team</h1>
         </header><!-- .entry-header -->
         <div class="row d-flex flex-xl-nowrap l-about__row">
@@ -26,6 +26,7 @@
                     </div>
                     <div class="l-profile__border"></div>
                     <h2 class="c-profile__mobile-name l-profile__mobile-name">kyle steinle</h2>
+                    <h5 class="c-profile__bio-title l-profile__bio-title--mobile c-profile__bio-title--mobile">(frontend developer)</h5>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/kyle-steinle-cutout-4.jpg" class="c-profile__dev--hover" alt="Las Vegas Developer Kyle Steinle">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/kyle-steinle-developer.jpg" class="c-profile__dev" alt="Las Vegas Developer Kyle Steinle">
                     <div class="c-profile__overlay l-profile__overlay">
