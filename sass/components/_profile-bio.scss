@@ -226,4 +226,13 @@
     .c-profile--right .l-profile__bio {
         right: 0 !important;
     }
+
+    .c-profile__bio-full {
+        padding: 0 15px;
+        text-align: left;
+    }
+
+    span.leading-word {
+        font-size: 1.4em;
+    }
 }

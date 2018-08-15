@@ -2128,7 +2128,12 @@ body {
   .c-profile--right {
     margin-right: 0 !important; }
   .c-profile--right .l-profile__bio {
-    right: 0 !important; } }
+    right: 0 !important; }
+  .c-profile__bio-full {
+    padding: 0 15px;
+    text-align: left; }
+  span.leading-word {
+    font-size: 1.4em; } }
 
 .c-profile__overlay {
   background-color: rgba(17, 17, 22, 0.9);
