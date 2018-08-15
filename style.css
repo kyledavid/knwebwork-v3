@@ -2083,7 +2083,7 @@ body {
   .c-profile__bio-full {
     line-height: 1.5em; } }
 
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   .c-profile {
     color: #fff3e9; }
   .l-profile__bio {
@@ -2101,7 +2101,7 @@ body {
     max-width: 100%; }
   .c-profile__mobile-name {
     display: block;
-    font-size: 60px;
+    font-size: 48px;
     font-style: italic;
     font-weight: 600;
     letter-spacing: .05em; }

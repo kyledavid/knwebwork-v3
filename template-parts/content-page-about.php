@@ -19,10 +19,10 @@
             <div class="c-profile l-profile working offset-xl-3 col-xl-3 offset-lg-1 col-lg-10 col-sm-12 c-profile--left">
                 <div class="c-profile__preview l-profile__preview">
                     <div class="c-profile__social l-profile__social d-flex justify-content-between">
-                        <a href="google.com"><span class="c-profile__social-github fab fa-github-alt"></span></a>
-                        <a href=""><span class="c-profile__social-instagram fab fa-instagram"></span></a>
-                        <a href=""><span class="c-profile__social-linkedin fab fa-linkedin-in"></span></a>
-                        <a href=""><span class="c-profile__social-twitter fab fa-twitter"></span></a>
+                        <a href="https://github.com/kyledavid" target="_blank"><span class="c-profile__social-github fab fa-github-alt"></span></a>
+                        <a href="https://www.instagram.com/fedora_melianenko/" target="_blank"><span class="c-profile__social-instagram fab fa-instagram"></span></a>
+                        <a href="https://www.linkedin.com/in/kyle-steinle-0b4023108/" target="_blank"><span class="c-profile__social-linkedin fab fa-linkedin-in"></span></a>
+                        <a href="https://twitter.com/kylesteinle" target="_blank"><span class="c-profile__social-twitter fab fa-twitter"></span></a>
                     </div>
                     <div class="l-profile__border"></div>
                     <h2 class="c-profile__mobile-name l-profile__mobile-name">kyle steinle</h2>
@@ -73,10 +73,10 @@
             <div class="c-profile l-profile offset-xl-1 col-xl-3 offset-lg-1 col-lg-10 col-sm-12 c-profile--right">
                 <div class="c-profile__preview l-profile__preview">
                     <div class="c-profile__social l-profile__social d-flex justify-content-between">
-                        <a href="google.com"><span class="c-profile__social-github fab fa-github-alt"></span></a>
-                        <a href=""><span class="c-profile__social-instagram fab fa-instagram"></span></a>
-                        <a href=""><span class="c-profile__social-linkedin fab fa-linkedin-in"></span></a>
-                        <a href=""><span class="c-profile__social-twitter fab fa-twitter"></span></a>
+                        <a href="https://github.com/nealhhdotdev" target="_blank"><span class="c-profile__social-github fab fa-github-alt"></span></a>
+                        <a href="https://www.instagram.com/neal_hill/" target="_blank"><span class="c-profile__social-instagram fab fa-instagram"></span></a>
+                        <a href="https://www.linkedin.com/in/nealahill/" target="_blank"><span class="c-profile__social-linkedin fab fa-linkedin-in"></span></a>
+                        <a href="https://twitter.com/neal__hill" target="_blank"><span class="c-profile__social-twitter fab fa-twitter"></span></a>
                     </div>
                     <div class="l-profile__border"></div>
                     <h2 class="c-profile__mobile-name l-profile__mobile-name">neal hill</h2>
