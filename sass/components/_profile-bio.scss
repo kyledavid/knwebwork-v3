@@ -219,4 +219,11 @@
     .l-profile__bio-wrapper {
         padding-top: 1em;
     }
+    .c-profile--right {
+        margin-right: 0 !important;
+    }
+
+    .c-profile--right .l-profile__bio {
+        right: 0 !important;
+    }
 }
