@@ -1,4 +1,4 @@
-$baseTime: 500;
+$baseTime: 300;
 $totalTime: $baseTime * 1 + $baseTime * 5 + $baseTime * 1;
 
 .l-profile--spacer {
@@ -77,10 +77,10 @@ $totalTime: $baseTime * 1 + $baseTime * 5 + $baseTime * 1;
 .l-profile--expanded .l-profile__border {
     width: initial;
     
-    border: 5px solid #ffffff;
+    border: 5px solid $color__off-white;
     
     right: -600px;
-    bottom: -100px;
+    bottom: -70px;
     top: -30px;
     left: -50px;
 }
@@ -90,7 +90,7 @@ $totalTime: $baseTime * 1 + $baseTime * 5 + $baseTime * 1;
 }
 
 .l-profile--contracting .l-profile__border {
-    border: 5px solid #ffffff;
+    border: 5px solid $color__off-white;
 }
 
 .c-profile--right.l-profile--unshrinking {

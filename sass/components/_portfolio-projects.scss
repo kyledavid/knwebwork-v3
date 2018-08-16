@@ -1,3 +1,5 @@
+$time__project-a-base: 150;
+
 .l-projects {
     display: flex;
     flex-flow: row wrap;
@@ -46,7 +48,7 @@
 .c-projects__overlay {
     background-color: $color__off-white;
 
-    transition: 800ms;
+    transition: $time__project-a-base * 2 + 0ms ease-in-out $time__project-a-base * 1 + 0ms;
 }
 
 .l-projects__overlay {
@@ -94,16 +96,17 @@
 }
 
 .c-projects__name {
-    background-color: $color__black;
+    background-color: rgba(34, 34, 34, .9);
     color: $color__off-white;
 
     font-size: 30px;
     font-weight: 300;
     text-align: center;
 
+
     overflow: hidden;
     text-transform: uppercase;
-    transition: 300ms;
+    transition: $time__project-a-base * 1 + 0ms;
 }
 
 .l-projects__name {
@@ -119,7 +122,7 @@
     z-index: 3;
 }
 
-@include media-breakpoint-down(xs) {
+@include media-breakpoint-down(md) {
     .l-projects {
         flex-flow: column;
     }

@@ -1,13 +1,17 @@
 .l-site-footer {
     position: absolute;
-    bottom: -4em;
     left: 0;
     right: 0;
+    top: 0;
+
+    height: 100vh;
 
     padding-bottom: 28px;
     
     color: $color__off-white;
     font-weight: 300;
+
+    z-index: 0;
 }
 
 .l-site-footer__site-info {
@@ -21,7 +25,9 @@
 }
 
 .l-site-footer__contact {
-    float: right;
+    position: absolute;
+    bottom: 38px;
+    right: 0;
 
     font-size: $font-size__24;
 
@@ -31,18 +37,22 @@
     }
 }
 
-@include media-breakpoint-down(xs) {
+@include media-breakpoint-down(md) {
     .l-site-footer__site-info {
         transform: none;
     }
-    .l-site-footer__contact {
-        display: none;
-    }
     .l-site-footer {
         position: initial;
+        height: initial;
         padding: 2em;
     }
     .l-site-footer__site-info {
         position: initial;
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .l-site-footer__contact {
+        display: none;
     }
 }

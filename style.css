@@ -1491,6 +1491,14 @@ body {
   position: relative;
   z-index: 2; }
 
+.site-header {
+  position: relative;
+  z-index: 2; }
+
+.site-content {
+  position: relative;
+  z-index: 2; }
+
 @media screen and (max-height: 768px) {
   #page {
     min-height: 100vh; } }
@@ -1511,12 +1519,14 @@ body {
 
 .l-site-footer {
   position: absolute;
-  bottom: -4em;
   left: 0;
   right: 0;
+  top: 0;
+  height: 100vh;
   padding-bottom: 28px;
   color: #fff3e9;
-  font-weight: 300; }
+  font-weight: 300;
+  z-index: 0; }
 
 .l-site-footer__site-info {
   display: inline-block;
@@ -1526,22 +1536,27 @@ body {
   transform: rotate(270deg) translateY(40px); }
 
 .l-site-footer__contact {
-  float: right;
+  position: absolute;
+  bottom: 38px;
+  right: 0;
   font-size: 1.5em; }
   .l-site-footer__contact a {
     color: inherit;
     text-decoration: none; }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .l-site-footer__site-info {
     transform: none; }
-  .l-site-footer__contact {
-    display: none; }
   .l-site-footer {
     position: initial;
+    height: initial;
     padding: 2em; }
   .l-site-footer__site-info {
     position: initial; } }
+
+@media (max-width: 575.98px) {
+  .l-site-footer__contact {
+    display: none; } }
 
 .l-work-form {
   margin-top: 48px;
@@ -1830,7 +1845,7 @@ body {
 
 .c-projects__overlay {
   background-color: #fff3e9;
-  transition: 800ms; }
+  transition: 300ms ease-in-out 150ms; }
 
 .l-projects__overlay {
   position: absolute;
@@ -1864,14 +1879,14 @@ body {
   bottom: 0; }
 
 .c-projects__name {
-  background-color: #222222;
+  background-color: rgba(34, 34, 34, 0.9);
   color: #fff3e9;
   font-size: 30px;
   font-weight: 300;
   text-align: center;
   overflow: hidden;
   text-transform: uppercase;
-  transition: 300ms; }
+  transition: 150ms; }
 
 .l-projects__name {
   margin: 0;
@@ -1884,7 +1899,7 @@ body {
   transform: translateY(-50%);
   z-index: 3; }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .l-projects {
     flex-flow: column; }
   .l-projects__project {
@@ -1907,7 +1922,7 @@ body {
   padding: 0; }
 
 .l-profile:hover .l-profile__border {
-  border: 5px solid #ffffff; }
+  border: 5px solid #fff3e9; }
 
 .l-profile__preview {
   max-width: 274px;
@@ -2136,7 +2151,7 @@ body {
     font-size: 1.4em; } }
 
 .c-profile__overlay {
-  background-color: rgba(17, 17, 22, 0.9);
+  background-color: rgba(34, 34, 34, 0.6);
   opacity: 0;
   transition: all 1ms; }
 
@@ -2185,14 +2200,14 @@ body {
 
 .l-profile {
   position: relative;
-  transition-duration: 95ms, 235ms, 115ms;
-  transition-delay: 0s, 95ms, 310ms;
+  transition-duration: 57ms, 141ms, 69ms;
+  transition-delay: 0s, 57ms, 186ms;
   transition-timing-function: linear;
   transition-property: margin-left, max-width, margin-right; }
 
 .l-profile--shrunk.c-profile--right {
-  transition-duration: 95ms, 235ms, 115ms;
-  transition-delay: 0s, 95ms, 310ms;
+  transition-duration: 57ms, 141ms, 69ms;
+  transition-delay: 0s, 57ms, 186ms;
   transition-timing-function: linear;
   transition-property: margin-left, max-width, margin-right; }
 
@@ -2212,15 +2227,15 @@ body {
 .l-profile--contracting {
   cursor: initial; }
   .l-profile--contracting .l-profile__bio-wrapper {
-    transition-duration: 500ms, 500ms, 400ms, 400ms, 0s; }
+    transition-duration: 300ms, 500ms, 400ms, 400ms, 0s; }
 
 .l-profile__bio-wrapper {
-  transition-duration: 550ms, 500ms, 400ms, 400ms, 0s;
+  transition-duration: 330ms, 500ms, 400ms, 400ms, 0s;
   transition-timing-function: linear;
   transition-property: right, bottom, top, left, width; }
 
 .l-profile__border {
-  transition-duration: 525ms, 500ms, 400ms, 400ms, 0s;
+  transition-duration: 315ms, 500ms, 400ms, 400ms, 0s;
   transition-timing-function: linear;
   transition-property: right, bottom, top, left, width; }
 
@@ -2229,9 +2244,9 @@ body {
 
 .l-profile--expanded .l-profile__border {
   width: initial;
-  border: 5px solid #ffffff;
+  border: 5px solid #fff3e9;
   right: -600px;
-  bottom: -100px;
+  bottom: -70px;
   top: -30px;
   left: -50px; }
 
@@ -2240,14 +2255,14 @@ body {
   right: -600px; }
 
 .l-profile--contracting .l-profile__border {
-  border: 5px solid #ffffff; }
+  border: 5px solid #fff3e9; }
 
 .c-profile--right.l-profile--unshrinking {
   margin-left: 8.33333%;
   margin-right: 8.33333%;
   max-width: 25%;
-  transition-duration: 95ms, 250ms, 95ms;
-  transition-delay: 350ms, 190ms, 0s;
+  transition-duration: 57ms, 150ms, 57ms;
+  transition-delay: 210ms, 114ms, 0s;
   transition-property: margin-left, max-width, margin-right; }
 
 .c-profile.l-profile--expanded .c-profile__dev,
@@ -2264,23 +2279,23 @@ body {
 
 .c-profile--left {
   position: relative;
-  transition-duration: 235ms, 95ms;
-  transition-delay: 95ms, 330ms;
+  transition-duration: 141ms, 57ms;
+  transition-delay: 57ms, 198ms;
   transition-timing-function: linear;
   transition-property: max-width, margin-left; }
 
 .c-profile--right {
-  transition-duration: 95ms, 235ms, 115ms;
-  transition-delay: 0s, 95ms, 310ms;
+  transition-duration: 57ms, 141ms, 69ms;
+  transition-delay: 0s, 57ms, 186ms;
   transition-timing-function: linear;
   transition-property: margin-right, max-width, margin-left; }
   .c-profile--right .l-profile__bio-wrapper {
-    transition-duration: 550ms, 500ms, 400ms, 400ms, 0s;
+    transition-duration: 330ms, 500ms, 400ms, 400ms, 0s;
     transition-timing-function: linear;
     transition-property: left, bottom, top, right, width; }
   .c-profile--right .l-profile__border {
     right: 0;
-    transition-duration: 525ms, 500ms, 400ms, 400ms, 0s;
+    transition-duration: 315ms, 500ms, 400ms, 400ms, 0s;
     transition-timing-function: linear;
     transition-property: left, bottom, top, right, width; }
   .c-profile--right .l-profile__bio-wrapper {
@@ -2294,13 +2309,13 @@ body {
   right: initial; }
 
 .l-profile--contracting .l-profile__bio-wrapper {
-  transition-duration: 500ms, 500ms, 400ms, 400ms, 0s; }
+  transition-duration: 300ms, 500ms, 400ms, 400ms, 0s; }
 
 .c-profile--right.l-profile--expanded .l-profile__border {
   width: initial;
-  border: 5px solid #ffffff;
+  border: 5px solid #fff3e9;
   right: -50px;
-  bottom: -100px;
+  bottom: -70px;
   top: -30px;
   left: -600px; }
 
@@ -2313,8 +2328,8 @@ body {
   margin-left: 25%;
   margin-right: 0;
   max-width: 25%;
-  transition-duration: 95ms, 250ms;
-  transition-delay: 0s, 180ms, 0s;
+  transition-duration: 57ms, 150ms;
+  transition-delay: 0s, 108ms, 0s;
   transition-property: margin-left, max-width; }
 
 /*--------------------------------------------------------------
