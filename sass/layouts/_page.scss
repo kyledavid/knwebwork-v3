@@ -37,3 +37,9 @@ body {
         min-height: 100vh;
     }
 }
+
+@include media-breakpoint-down(sm) {
+    .site-header {
+        z-index: 3;
+    }
+}

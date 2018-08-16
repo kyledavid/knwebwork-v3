@@ -1503,6 +1503,10 @@ body {
   #page {
     min-height: 100vh; } }
 
+@media (max-width: 767.98px) {
+  .site-header {
+    z-index: 3; } }
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -1758,11 +1762,11 @@ body {
     background-color: rgba(64, 64, 64, 0.5);
     transition-duration: 600ms; }
   .l-main-nav__menu-container {
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     z-index: 5; }
   .l-main-nav__menu-container--hidden {
     left: 100%; }
@@ -1945,6 +1949,9 @@ body {
 .c-profile__spacer {
   flex: 1;
   content: " "; }
+
+.c-profile__social a:hover {
+  transform: scale(1.2); }
 
 .l-profile__social {
   position: absolute;

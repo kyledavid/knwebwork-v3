@@ -45,6 +45,12 @@
     content: " ";
 }
 
+.c-profile__social {
+    a:hover {
+        transform: scale(1.2);
+    }
+}
+
 .l-profile__social {
     position: absolute;
 
