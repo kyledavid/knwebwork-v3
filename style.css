@@ -1680,8 +1680,8 @@ body {
     height: 1em;
     position: relative;
     z-index: 2;
-    transition-duration: 200ms;
-    transition-delay: 1s;
+    transition-duration: 400ms;
+    transition-delay: 1400ms;
     transition-property: height; }
   .l-hero__main-title .l-hero__main-bg {
     content: " ";
@@ -1692,16 +1692,17 @@ body {
     left: 0;
     right: 0;
     z-index: 1;
-    transition-duration: 500ms, 500ms;
-    transition-delay: 0s, 500ms;
-    transition-property: right, left; }
+    transition-duration: 500ms, 500ms, 500ms;
+    transition-delay: 0s, 700ms, 500ms;
+    transition-property: right, left, top; }
 
 .l-hero__main-title--hidden .l-hero__main-text {
   height: 0; }
 
 .l-hero__main-title--hidden .l-hero__main-bg {
   left: -1000px;
-  right: 1000px; }
+  right: 1000px;
+  top: -25px; }
 
 .c-hero__subtitle {
   color: #222222;
@@ -1726,22 +1727,23 @@ body {
     left: 0;
     right: 0;
     z-index: 1;
-    transition-duration: 500ms, 500ms;
-    transition-delay: 0s, 500ms;
-    transition-property: left, right; }
+    transition-duration: 500ms, 500ms, 500ms;
+    transition-delay: 0s, 700ms, 500ms;
+    transition-property: left, right, bottom; }
   .l-hero__subtitle .l-hero__sub-text {
     display: block;
     overflow: hidden;
     height: 1em;
     position: relative;
     z-index: 2;
-    transition-duration: 200ms;
-    transition-delay: 1s;
+    transition-duration: 400ms;
+    transition-delay: 2000ms;
     transition-property: height; }
 
 .l-hero__subtitle--hidden .l-hero__sub-bg {
   left: 1000px;
-  right: -1000px; }
+  right: -1000px;
+  bottom: -25px; }
 
 .l-hero__subtitle--hidden .l-hero__sub-text {
   height: 0; }
