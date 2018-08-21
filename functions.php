@@ -128,7 +128,7 @@ function kn_webwork_3_0_scripts() {
 	wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css');
 
 	if ( is_front_page() ) {
-		wp_enqueue_script( 'front-page-scripts', get_template_directory_uri() . '/js/front-page.js', array('jquery'), null, true);
+		wp_enqueue_script( 'front-page-scripts', get_template_directory_uri() . '/js/front-page.js', array('jquery'), filemtime(get_stylesheet_directory() . '/js/about.js'), true);
 	}
 	
 	if ( is_page('work-with-us') ) {

@@ -7,6 +7,7 @@
 }
 
 .c-hero__intro {
+    background-color: rgba(255, 243, 233, 0);
     position: relative;
     right: 0;
 
@@ -15,14 +16,16 @@
     text-align: center;
 
     opacity: 1;
-    transition-duration: 800ms
+    transition-duration: 800ms;
+    transition-delay: 0s, 800ms;
+    transition-property: opacity, background-color;
 }
 
 .l-hero__intro {
     margin-bottom: 0;
 }
 
-.l-hero__intro--hidden {
+.c-hero__intro--hidden {
     opacity: 0;
 }
 
@@ -47,19 +50,65 @@
     opacity: 0;
 }
 
+.c-hero__main-title {
+    height: unset;
+}
+
+.l-hero__main-title {
+    display: block;
+    padding-top: .15em;
+    height: 1.15em;
+    .l-hero__main-text {
+        display: block;
+        overflow: hidden;
+        height: 1em;
+        position: relative;
+        z-index: 2;
+
+        transition-duration: 200ms;
+        transition-delay: 1s;
+        transition-property: height;
+    }
+    .l-hero__main-bg {
+        content: " ";
+        background-color: $color__brey;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+
+        transition-duration: 500ms, 500ms;
+        transition-delay: 0s, 500ms;
+        transition-property: right, left;
+    }
+}
+
+.l-hero__main-title--hidden {
+    .l-hero__main-text {
+        height: 0;
+    }
+    .l-hero__main-bg {
+        left: -1000px;
+        right: 1000px;
+    }
+}
+
 .c-hero__subtitle {
+    background-color: $color__off-white;
+    color: $color__black;
     position: relative;
 
-    display: block;
+    display: none;
 
     font-size: 48px;
     font-style: normal;
 
     transition-duration: 1200ms
 }
-
 .l-hero__subtitle {
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 .l-hero__subtitle--hidden {
