@@ -19,12 +19,12 @@ get_header();
         <main id="main" class="site-main container">
             <div class="c-hero l-hero">
                 <h2 class="c-hero__intro l-hero__intro c-hero__intro--hidden p-0 col-sm-5 offset-sm-4">Las Vegas Grown</h2>
-                <h1 class="c-hero__title l-hero__title d-flex align-items-bottom flex-column col-sm-5 offset-sm-4">
-                    <span class="c-hero__main-title d-flex align-items-center l-hero__main-title l-hero__main-title--hidden">
+                <h1 class="c-hero__title l-hero__title d-flex align-items-center flex-column col-sm-5 offset-sm-4">
+                    <span class="c-hero__main-title d-flex align-items-end l-hero__main-title l-hero__main-title--hidden">
                         <span class="c-hero__main-bg l-hero__main-bg"></span>
                         <span class="c-hero__main-text l-hero__main-text">FULL STACK</span>
                     </span>
-                    <span class="c-hero__subtitle l-hero__subtitle l-hero__subtitle--hidden d-flex align-items-top">
+                    <span class="c-hero__subtitle l-hero__subtitle l-hero__subtitle--hidden d-flex align-items-end">
                         <span class="c-hero__sub-bg l-hero__sub-bg"></span>
                         <span class="c-hero__sub-text l-hero__sub-text">APPS &amp; WEBSITES</span>
                     </span>

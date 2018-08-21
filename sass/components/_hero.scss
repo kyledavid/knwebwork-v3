@@ -1,3 +1,5 @@
+$transition-basis__hero: 90;
+
 .c-hero {
 
 }
@@ -67,8 +69,8 @@
         position: relative;
         z-index: 2;
 
-        transition-duration: 400ms;
-        transition-delay: 1400ms;
+        transition-duration: 5.5 * $transition-basis__hero * 1ms;
+        transition-delay: 24 * $transition-basis__hero * 1ms;
         transition-property: height;
     }
     .l-hero__main-bg {
@@ -81,8 +83,8 @@
         right: 0;
         z-index: 1;
 
-        transition-duration: 500ms, 500ms, 500ms;
-        transition-delay: 0s, 700ms, 500ms;
+        transition-delay: 0s, 7 * $transition-basis__hero * 1ms, 5 * $transition-basis__hero * 1ms;
+        transition-duration: 5 * $transition-basis__hero * 1ms, 5 * $transition-basis__hero * 1ms, 8 * $transition-basis__hero * 1ms;
         transition-property: right, left, top;
     }
 }
@@ -107,7 +109,7 @@
     font-size: 48px;
     font-style: normal;
 
-    transition-duration: 1200ms;
+    transition-duration: 12 * $transition-basis__hero * 1ms;
 }
 .l-hero__subtitle {
     position: relative;
@@ -125,8 +127,8 @@
         right: 0;
         z-index: 1;
 
-        transition-duration: 500ms, 500ms, 500ms;
-        transition-delay: 0s, 700ms, 500ms;
+        transition-delay: 10 * $transition-basis__hero * 1ms, 15 * $transition-basis__hero * 1ms, 14 * $transition-basis__hero * 1ms;
+        transition-duration: 5 * $transition-basis__hero * 1ms, 6 * $transition-basis__hero * 1ms, 8 * $transition-basis__hero * 1ms;
         transition-property: left, right, bottom;
     }
     .l-hero__sub-text {
@@ -136,8 +138,8 @@
         position: relative;
         z-index: 2;
 
-        transition-duration: 400ms;
-        transition-delay: 2000ms;
+        transition-duration: 5.5 * $transition-basis__hero * 1ms;
+        transition-delay: 34 * $transition-basis__hero * 1ms;
         transition-property: height;
     }
 }
@@ -164,7 +166,7 @@
     text-decoration: none;
 
     opacity: 1;
-    transition-duration: 600ms
+    transition-duration: 10 * $transition-basis__hero * 1ms;
 }
 
 .l-hero__cta {

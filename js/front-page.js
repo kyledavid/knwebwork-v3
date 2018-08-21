@@ -15,8 +15,8 @@
 
     $(document).ready(function() {
         setTimeout(showIntro, 400)
-        setTimeout(showTitle, 1600)
-        setTimeout(showCTA, 2900)
+        setTimeout(showTitle, 1800)
+        setTimeout(showCTA, 5700)
         $(document).click(function() {
             showIntro()
             showTitle()

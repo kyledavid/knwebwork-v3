@@ -1464,6 +1464,7 @@ html {
 # Layouts
 --------------------------------------------------------------*/
 body {
+  background-color: #736357;
   color: #fff3e9;
   min-height: 120vh;
   padding-bottom: 8em; }
@@ -1680,8 +1681,8 @@ body {
     height: 1em;
     position: relative;
     z-index: 2;
-    transition-duration: 400ms;
-    transition-delay: 1400ms;
+    transition-duration: 495ms;
+    transition-delay: 2160ms;
     transition-property: height; }
   .l-hero__main-title .l-hero__main-bg {
     content: " ";
@@ -1692,8 +1693,8 @@ body {
     left: 0;
     right: 0;
     z-index: 1;
-    transition-duration: 500ms, 500ms, 500ms;
-    transition-delay: 0s, 700ms, 500ms;
+    transition-delay: 0s, 630ms, 450ms;
+    transition-duration: 450ms, 450ms, 720ms;
     transition-property: right, left, top; }
 
 .l-hero__main-title--hidden .l-hero__main-text {
@@ -1710,7 +1711,7 @@ body {
   display: none;
   font-size: 48px;
   font-style: normal;
-  transition-duration: 1200ms; }
+  transition-duration: 1080ms; }
 
 .l-hero__subtitle {
   position: relative;
@@ -1727,8 +1728,8 @@ body {
     left: 0;
     right: 0;
     z-index: 1;
-    transition-duration: 500ms, 500ms, 500ms;
-    transition-delay: 0s, 700ms, 500ms;
+    transition-delay: 900ms, 1350ms, 1260ms;
+    transition-duration: 450ms, 540ms, 720ms;
     transition-property: left, right, bottom; }
   .l-hero__subtitle .l-hero__sub-text {
     display: block;
@@ -1736,8 +1737,8 @@ body {
     height: 1em;
     position: relative;
     z-index: 2;
-    transition-duration: 400ms;
-    transition-delay: 2000ms;
+    transition-duration: 495ms;
+    transition-delay: 3060ms;
     transition-property: height; }
 
 .l-hero__subtitle--hidden .l-hero__sub-bg {
@@ -1755,7 +1756,7 @@ body {
   font-style: italic;
   text-decoration: none;
   opacity: 1;
-  transition-duration: 600ms; }
+  transition-duration: 900ms; }
 
 .l-hero__cta {
   display: inline-block;
