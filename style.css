@@ -1671,7 +1671,9 @@ body {
 .l-hero__main-title {
   display: block;
   padding-top: .15em;
-  height: 1.15em; }
+  position: relative;
+  height: 1.15em;
+  width: 100%; }
   .l-hero__main-title .l-hero__main-text {
     display: block;
     overflow: hidden;
@@ -1702,7 +1704,6 @@ body {
   right: 1000px; }
 
 .c-hero__subtitle {
-  background-color: #fff3e9;
   color: #222222;
   position: relative;
   display: none;
@@ -1711,10 +1712,39 @@ body {
   transition-duration: 1200ms; }
 
 .l-hero__subtitle {
-  padding-top: 15px; }
+  position: relative;
+  display: block;
+  padding-top: .15em;
+  height: 1.15em;
+  width: 100%; }
+  .l-hero__subtitle .l-hero__sub-bg {
+    content: " ";
+    background-color: #fff3e9;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition-duration: 500ms, 500ms;
+    transition-delay: 0s, 500ms;
+    transition-property: left, right; }
+  .l-hero__subtitle .l-hero__sub-text {
+    display: block;
+    overflow: hidden;
+    height: 1em;
+    position: relative;
+    z-index: 2;
+    transition-duration: 200ms;
+    transition-delay: 1s;
+    transition-property: height; }
 
-.l-hero__subtitle--hidden {
-  left: 250px; }
+.l-hero__subtitle--hidden .l-hero__sub-bg {
+  left: 1000px;
+  right: -1000px; }
+
+.l-hero__subtitle--hidden .l-hero__sub-text {
+  height: 0; }
 
 .c-hero__cta {
   position: relative;
