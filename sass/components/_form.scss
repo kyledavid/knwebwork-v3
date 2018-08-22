@@ -102,18 +102,6 @@
     width: 49%;
 }
 
-.l-contact__background {
-    background-color: #1a1a1a;
-    position:absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: -128px;
-    z-index: 0;
-}
-
-
-
 @include media-breakpoint-down(sm) {
     .l-work-form__container {
         width: 100%;
