@@ -1,9 +1,13 @@
 (function($){
+    var width = window.innerWidth
+
     var showTitle = function() {
+
         //$('.c-hero__title').removeClass('l-hero__title--hidden')
         //$('.c-hero__subtitle').removeClass('l-hero__subtitle--hidden')
         $('.l-hero__main-title--hidden').removeClass('l-hero__main-title--hidden')
         $('.l-hero__subtitle--hidden').removeClass('l-hero__subtitle--hidden')
+
     }
 
     var showIntro = function() {
@@ -14,6 +18,7 @@
     }
 
     $(document).ready(function() {
+
         setTimeout(showIntro, 400)
         setTimeout(showTitle, 1800)
         setTimeout(showCTA, 5700)

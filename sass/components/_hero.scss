@@ -70,7 +70,7 @@ $transition-basis__hero: 90;
         z-index: 2;
 
         transition-duration: 5.5 * $transition-basis__hero * 1ms;
-        transition-delay: 24 * $transition-basis__hero * 1ms;
+        transition-delay: 22 * $transition-basis__hero * 1ms;
         transition-property: height;
     }
     .l-hero__main-bg {
@@ -94,8 +94,8 @@ $transition-basis__hero: 90;
         height: 0;
     }
     .l-hero__main-bg {
-        left: -1000px;
-        right: 1000px;
+        left: -9999px;
+        right: 9999px;
         top: -25px;
     }
 }
@@ -139,7 +139,7 @@ $transition-basis__hero: 90;
         z-index: 2;
 
         transition-duration: 5.5 * $transition-basis__hero * 1ms;
-        transition-delay: 34 * $transition-basis__hero * 1ms;
+        transition-delay: 32 * $transition-basis__hero * 1ms;
         transition-property: height;
     }
 }
@@ -148,8 +148,8 @@ $transition-basis__hero: 90;
 
 .l-hero__subtitle--hidden {
     .l-hero__sub-bg {
-        left: 1000px;
-        right: -1000px;
+        left: 9999px;
+        right: -9999px;
         bottom: -25px;
     }
     .l-hero__sub-text {

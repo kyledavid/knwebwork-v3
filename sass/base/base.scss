@@ -1,9 +1,12 @@
 body {
     background-color: $color__brey;
-    
+
     color: $color__off-white;
 
     min-height: 120vh;
 
     padding-bottom: 8em;
+
+    overflow-x: hidden;
+    overflow-y: auto;
 }

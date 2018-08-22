@@ -1467,7 +1467,9 @@ body {
   background-color: #736357;
   color: #fff3e9;
   min-height: 120vh;
-  padding-bottom: 8em; }
+  padding-bottom: 8em;
+  overflow-x: hidden;
+  overflow-y: auto; }
 
 /*--------------------------------------------------------------
 # Layouts
@@ -1528,6 +1530,7 @@ body {
   right: 0;
   top: 0;
   height: 100vh;
+  max-height: 900px;
   padding-bottom: 28px;
   color: #fff3e9;
   font-weight: 300;
@@ -1682,7 +1685,7 @@ body {
     position: relative;
     z-index: 2;
     transition-duration: 495ms;
-    transition-delay: 2160ms;
+    transition-delay: 1980ms;
     transition-property: height; }
   .l-hero__main-title .l-hero__main-bg {
     content: " ";
@@ -1701,8 +1704,8 @@ body {
   height: 0; }
 
 .l-hero__main-title--hidden .l-hero__main-bg {
-  left: -1000px;
-  right: 1000px;
+  left: -9999px;
+  right: 9999px;
   top: -25px; }
 
 .c-hero__subtitle {
@@ -1738,12 +1741,12 @@ body {
     position: relative;
     z-index: 2;
     transition-duration: 495ms;
-    transition-delay: 3060ms;
+    transition-delay: 2880ms;
     transition-property: height; }
 
 .l-hero__subtitle--hidden .l-hero__sub-bg {
-  left: 1000px;
-  right: -1000px;
+  left: 9999px;
+  right: -9999px;
   bottom: -25px; }
 
 .l-hero__subtitle--hidden .l-hero__sub-text {
