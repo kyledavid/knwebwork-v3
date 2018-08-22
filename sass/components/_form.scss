@@ -21,7 +21,7 @@
     // border-bottom: 1px solid $color__off-white;
 
     color: $color__black;
-    font-size: $font-size__24;
+    font-size: $font-size__22;
     font-weight: 300;
 }
 
@@ -30,16 +30,17 @@
     width: 100%;
 
     margin-bottom: 30px;
-    padding: 4px;
-    padding-top: 26px;
+    margin-left: 0;
+    margin-top: 4px;
+    padding: 8px 12px;
 }
 
 .c-work-form__textarea {
     background-color: $color__off-white;
-
+    color: $color__black;
     border: none;
 
-    font-size: $font-size__24;
+    font-size: $font-size__22;
     font-weight: 300;
 }
 
@@ -49,17 +50,18 @@
     height: 90px;
     width: 100%;
 
-    margin-top: 16px;
+    padding: 8px 12px;
+    margin-top: 4px;
 }
 
 .c-work-form__submit {
-    background: none;
+    background-color: #333;
 
     border: none;
 
     color: $color__emphasis;
     font-style: italic;
-    font-size: $font-size__38;
+    font-size: $font-size__24;
 
     &:hover {
         background-color: $color__emphasis;
@@ -69,29 +71,35 @@
 
 .l-work-form__submit {
     margin-top: 30px;
+    padding: 8px 16px;
 }
 
 .l-work-form__field--half {
-    width: 49.5%;
-
     &:last-of-type {
         margin-left: .5%;
+    }
+    &:first-of-type {
+        margin-left: 0;
     }
 }
 
 .c-work-form__label {
     color: $color__off-white;
-    font-size: $font-size__30;
+    font-size: $font-size__22;
     font-weight: 300;
 }
 
 .l-work-form__label {
+    display: block;
+}
+
+.l-work-form__container {
     display: inline-block;
     width: 100%;
 }
 
-.l-work-form__label--half {
-    width: 48%;
+.l-work-form__container--half {
+    width: 49%;
 }
 
 .l-contact__background {
@@ -102,4 +110,12 @@
     right: 0;
     bottom: -128px;
     z-index: 0;
+}
+
+
+
+@include media-breakpoint-down(sm) {
+    .l-work-form__container {
+        width: 100%;
+    }
 }

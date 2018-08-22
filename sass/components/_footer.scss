@@ -1,3 +1,7 @@
+.c-site-footer {
+    pointer-events: none;
+}
+
 .l-site-footer {
     position: absolute;
     left: 0;
@@ -12,7 +16,7 @@
     color: $color__off-white;
     font-weight: 300;
 
-    z-index: 0;
+    z-index: 4;
 }
 
 .l-site-footer__site-info {
@@ -32,6 +36,7 @@
 
     font-size: $font-size__25;
 
+    pointer-events: auto;
     a {
         color: inherit;
         text-decoration: none;

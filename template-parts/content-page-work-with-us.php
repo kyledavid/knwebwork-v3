@@ -11,7 +11,7 @@
 
 <div class="c-contact__background l-contact__background"></div>
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="col-sm-6 offset-sm-3">
+    <div class="col-10 col-xl-6 col-lg-8  offset-xl-3 offset-lg-2 offset-sm-1">
         <h1 class="c-contact-cta l-contact-cta"><span class="c-contact-cta__first-line l-contact-cta__first-line">Dreaming up a Project?</span>
             <span class="c-contact-cta__second-line l-contact-cta__second-line">We can Bring it to Life.</span>
         </h1>
@@ -20,14 +20,26 @@
         </p>
         
             <form class="c-work-form l-work-form l-work-form--hidden">
-                <label class="c-work-form__label l-work-form__label">NAME</label>
-                <input id="client-name" name="client-name" class="c-work-form__field l-work-form__field l-work-form__field--half"></input>
-                <label class="c-work-form__label l-work-form__label l-work-form__label--half">EMAIL</label><!--
-                --><label class="c-work-form__label l-work-form__label l-work-form__label--half">PHONE</label>
-                <input id="client-email" name="client-email" class="c-work-form__field l-work-form__field l-work-form__field--half" name="client-email"></input><!--
-                --><input id="client-phone" name="client-phone" class="c-work-form__field l-work-form__field l-work-form__field--half" name="client-phone"></input>
-                <label class="c-work-form__label l-work-form__label">PROJECT DESCRIPTION</label>
-                <textarea id="client-project" name="client-project" class="c-work-form__textarea l-work-form__textarea"></textarea>
+                <div class="c-work-form__container l-work-form__container l-work-form__container--half">
+                    <label class="c-work-form__label l-work-form__label">NAME</label>
+                    <input id="client-name" name="client-name" class="c-work-form__field l-work-form__field l-work-form__field--half"></input>
+                </div>
+                <div class="c-work-form__row d-flex justify-content-between flex-wrap">
+                    <div class="c-work-form__container l-work-form__container l-work-form__container--half">
+                        <label class="c-work-form__label l-work-form__label l-work-form__label--half">EMAIL</label><!--
+                        -->
+                        <input id="client-email" name="client-email" class="c-work-form__field l-work-form__field l-work-form__field--half" name="client-email"></input><!--
+                        -->
+                    </div>
+                    <div class="c-work-form__container l-work-form__container l-work-form__container--half">
+                        <label class="c-work-form__label l-work-form__label l-work-form__label--half o">PHONE</label>
+                        <input id="client-phone" name="client-phone" class="c-work-form__field l-work-form__field l-work-form__field--half" name="client-phone"></input>
+                    </div>
+                </div>
+                <div class="c-work-form__container l-work-form__container">
+                    <label class="c-work-form__label l-work-form__label">PROJECT DESCRIPTION</label>
+                    <textarea id="client-project" name="client-project" class="c-work-form__textarea l-work-form__textarea"></textarea>
+                </div>
                 <button type="submit" class="c-work-form__submit l-work-form__submit">submit</button>
             </form>
         
