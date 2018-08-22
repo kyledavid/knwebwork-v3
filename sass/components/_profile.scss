@@ -46,6 +46,10 @@
 }
 
 .c-profile__social {
+    overflow: hidden;
+    transition-delay: 300ms;
+    transition-duration: 300ms;
+    transition-property: height;
     a:hover {
         transform: scale(1.2);
     }

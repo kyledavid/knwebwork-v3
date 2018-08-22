@@ -43,10 +43,12 @@ $totalTime: $baseTime * 1 + $baseTime * 5 + $baseTime * 1;
         right: 0;
         bottom: 0;
     }
-
+    .l-profile__social {
+        transition: all 0s;
+    }
     .l-profile__social,
     .l-profile__border {
-        display: none !important;
+        height: 0;
     }
 }
 

@@ -15,12 +15,12 @@
 }
 
 .c-work-form__field {
-    background: none;
+    background-color: $color__off-white;
 
     border: none;
-    border-bottom: 1px solid $color__off-white;
+    // border-bottom: 1px solid $color__off-white;
 
-    color: rgba(255, 243, 233, 1);
+    color: $color__black;
     font-size: $font-size__24;
     font-weight: 300;
 }
@@ -30,20 +30,21 @@
     width: 100%;
 
     margin-bottom: 30px;
+    padding: 4px;
     padding-top: 26px;
 }
 
 .c-work-form__textarea {
-    background: none;
+    background-color: $color__off-white;
 
     border: none;
-    border-bottom: 1px solid $color__off-white;
 
     font-size: $font-size__24;
     font-weight: 300;
 }
 
 .l-work-form__textarea {
+
     display: inline-block;
     height: 90px;
     width: 100%;
@@ -79,6 +80,7 @@
 }
 
 .c-work-form__label {
+    color: $color__off-white;
     font-size: $font-size__30;
     font-weight: 300;
 }
@@ -89,6 +91,15 @@
 }
 
 .l-work-form__label--half {
-    width: 50%;
+    width: 48%;
 }
 
+.l-contact__background {
+    background-color: #1a1a1a;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -128px;
+    z-index: 0;
+}

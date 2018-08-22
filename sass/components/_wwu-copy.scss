@@ -1,0 +1,32 @@
+.c-contact-cta {
+    color: $color__off-white;
+    font-size: 44.2px;
+    font-weight: 500;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+.l-contact-cta {
+    margin-top: 0;
+    margin-bottom: .7em;
+    padding-top: 64px;
+}
+
+.c-contact-cta__second-line {
+    font-weight: 800;
+}
+
+.l-contact-cta__second-line {
+    display: block;
+}
+
+.c-contact__copy {
+    color: $color__off-white;
+    font-size: $font-size__20;
+    line-height: 2.1em;
+    text-align: center;
+}
+
+.l-contact__copy {
+    margin-top: 0;
+}

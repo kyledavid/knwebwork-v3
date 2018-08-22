@@ -9,15 +9,19 @@
 
 ?>
 
+<div class="c-contact__background l-contact__background"></div>
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="col-sm-6 offset-sm-3">
-        <header class="entry-header">
-            <?php the_title( '<h1 class="o-page-header l-page-header l-page-header--hidden">', '</h1>' ); ?>
-        </header><!-- .entry-header -->
+        <h1 class="c-contact-cta l-contact-cta"><span class="c-contact-cta__first-line l-contact-cta__first-line">Dreaming up a Project?</span>
+            <span class="c-contact-cta__second-line l-contact-cta__second-line">We can Bring it to Life.</span>
+        </h1>
+        <p class="c-contact__copy l-contact__copy">
+            As a full stack team, we handle all stages of the development cycle in-house. That means from design to deployment, you'll work directly with us, with no outside contractors or middlemen. We build ecommerce sites, mobile apps and can handle most custom ideas you have. Drop us a line. If it’s a weekday we’ll get back to you within 24 hours ;) 
+        </p>
         
             <form class="c-work-form l-work-form l-work-form--hidden">
                 <label class="c-work-form__label l-work-form__label">NAME</label>
-                <input id="client-name" name="client-name" class="c-work-form__field l-work-form__field"></input>
+                <input id="client-name" name="client-name" class="c-work-form__field l-work-form__field l-work-form__field--half"></input>
                 <label class="c-work-form__label l-work-form__label l-work-form__label--half">EMAIL</label><!--
                 --><label class="c-work-form__label l-work-form__label l-work-form__label--half">PHONE</label>
                 <input id="client-email" name="client-email" class="c-work-form__field l-work-form__field l-work-form__field--half" name="client-email"></input><!--

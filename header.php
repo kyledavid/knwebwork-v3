@@ -45,7 +45,7 @@ if ( is_page('about') ) {
 		<nav id="site-navigation" class="c-main-nav l-main-nav container clearfix">
 			<div class="c-main-nav__logo">
 				<a href="<?php echo bloginfo('url'); ?>" class="o-image-link">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/knww-logo.png">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/knww-logo.png" alt="KN Webwork Logo">
 				</a>
 			</div>
 			<button class="c-main-nav__menu-toggle l-main-nav__menu-toggle" aria-controls="primary-menu" aria-expanded="false"></button>
@@ -53,8 +53,8 @@ if ( is_page('about') ) {
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
 				'menu_id'        => 'primary-menu',
-				'menu_class'	 => 'c-main-nav__menu l-main-nav__menu l-main-nav__menu--hidden',
-				'container_class'=> 'c-main-nav__menu-container l-main-nav__menu-container l-main-nav__menu-container--hidden',
+				'menu_class'	 => 'c-main-nav__menu l-main-nav__menu',
+				'container_class'=> 'c-main-nav__menu-container l-main-nav__menu-container',
 			) );
 			?>
 		</nav><!-- #site-navigation -->

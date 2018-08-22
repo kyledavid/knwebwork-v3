@@ -1,3 +1,8 @@
+.site-header {
+    background-color: rgba(0, 0, 0, .3);
+    padding-bottom: 1em;
+}
+
 .c-main-nav__menu {
     position: relative;
     
@@ -15,6 +20,12 @@
 
 .c-main-nav__logo {
     float: left;
+
+    transition: all 500ms;
+    &:hover {
+        opacity: .9;
+        transform: scale(1.02);
+    }
 }
 
 .c-main-nav__menu-item {
@@ -23,7 +34,7 @@
     margin-left: 4em;
 
     color: $color__off-white;
-    font-size: $font-size__24;
+    font-size: $font-size__25;
     font-weight: 300;
 
     list-style-type: none;
